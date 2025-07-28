@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/estimate.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+	<script src="../js/jquery-3.5.1.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<title>dbay</title>
+</head>
+
+<body>
+	<div class="wrap">
+		<header>
+			<h2>견적확인</h2>
+			<button type="button" aria-label="알림 확인 버튼"><img src="../img/ico_alram.png" alt="알림"></button>
+		</header><!-- header -->
+		<div class="wrapper">
+			<div class="list_wrap">
+				<div class="sel_wrap">
+					<button type="button" class="filter_btn" aria-label="선택 필터 버튼">최신순</button>
+				</div><!-- sel_wrap -->
+				<ul>
+					<li class="box">
+						<div class="product_wrap">
+							<div class="product_img"><img src="../img/img_phone.png" alt="아이폰15"></div>
+							<ul class="product_info_wrap">
+								<li class="product_name">
+									<div>아이폰 15</div>
+									<div class="time">마감 - 48시간</div>
+								</li>
+								<li class="company"><span>모델번호</span>U132806471</li>
+								<li class="company"><span>모델색상</span>
+									<div class="color_group"><span class="color pink" aria-label="분홍색" role="img"></span></div>
+								</li>
+								<li class="company"><span>신청현황</span>번호이동/LGU+/다이렉트 5G 48</li>
+							</ul>
+						</div><!-- product_wrap -->
+						<a href="#" class="check_list">
+							<div class="flex-c">
+								<div class="profile_img"><img src="../img/img-profile-01.png" alt="프로필1" class="img"></div>
+								<div class="profile_img"><img src="../img/img-profile-02.png" alt="프로필2" class="img"></div>
+								<div class="profile_img"><img src="../img/img-profile-03.png" alt="프로필3" class="img"></div>
+								<div class="profile_img"><img src="../img/img-profile-04.png" alt="프로필4" class="img"></div>
+								<div class="profile_img"><img src="../img/img-profile-05.png" alt="프로필5" class="img"></div>
+								<div class="total">총 <span>6</span>개의 견적을 확인해보세요.</div>
+							</div>
+						</a><!-- check_list -->
+						<h3>최저견적가</h3>
+						<ul class="product_details">
+							<li>
+								<div>요금제(월)</div>
+								<p>48,000원</p>
+							</li>
+							<li>
+								<div>총요금(월)</div>
+								<p>80,680원</p>
+							</li>
+							<li>
+								<div>매장지원금</div>
+								<p>450,000원</p>
+							</li>
+						</ul><!-- product_details -->
+					</li>
+				</ul>
+			</div><!-- list_wrap -->
+		</div><!-- wrapper -->
+		<nav>
+			<ul>
+				<li><a href="#">홈</a></li>
+				<li><a href="#" class="active" aria-current="page">견적확인</a></li>
+				<li><a href="#">마켓</a></li>
+				<li><a href="#">MY</a></li>
+			</ul>
+		</nav><!-- nav -->
+	</div><!-- wrap -->
+
+	<div class="modal_wrap">
+		<div class="pop">
+			<h3>상품별 검색</h3>
+			<div class="radio_wrap radio_wrap2">
+				<span>
+					<input type="radio" id="radio1" name="product" checked>
+					<label for="radio1">전체</label>
+				</span>
+				<span>
+					<input type="radio" id="radio2" name="product">
+					<label for="radio2">휴대폰</label>
+				</span>
+				<span>
+					<input type="radio" id="radio3" name="product">
+					<label for="radio3">인터넷</label>
+				</span>
+				<span>
+					<input type="radio" id="radio4" name="product">
+					<label for="radio4">정수기</label>
+				</span>
+				<span>
+					<input type="radio" id="radio5" name="product">
+					<label for="radio5">공기청정기</label>
+				</span>
+				<span>
+					<input type="radio" id="radio6" name="product">
+					<label for="radio6">안마의자</label>
+				</span>
+			</div>
+			<hr>
+			<h3>정렬순서</h3>
+			<div class="radio_wrap radio_wrap1">
+				<span>
+					<input type="radio" id="radio7" name="sorting" checked>
+					<label for="radio7">최신순</label>
+				</span>
+				<span>
+					<input type="radio" id="radio8" name="sorting">
+					<label for="radio8">조회 많은순</label>
+				</span>
+			</div>
+			<button type="button" class="sel_btn">선택완료</button>
+		</div>
+	</div><!-- modal_wrap -->
+	<script src="../js/common.js"></script>
+</body>
+
+</html>

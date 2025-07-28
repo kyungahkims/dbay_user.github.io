@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/use.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+	<script src="../js/jquery-3.5.1.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<title>디베이</title>
+</head>
+
+<body>
+	<div class="wrap">
+		<header>
+			<div>
+				<a href="#"><img src="../img/logo.png" alt="디베이, 전자제품 최저가 견적"></a>
+			</div>
+			<button type="button" aria-label="알림 확인 버튼"><img src="../img/ico_alram.png" alt="알림"></button>
+		</header><!-- header -->
+		<div class="wrapper wrapper2">
+			<div class="before flex-c">
+				<a href="#" aria-label="이전 페이지로 돌아가기">
+					<img src="../img/ico-back.svg" alt="이전 페이지로 돌아가기">
+				</a>
+				<h2>내 전화번호 인증</h2>
+			</div>
+			<p class="info">디베이 서비스를 이용하기 위해선 최초 1회<br>
+				내 명의의 휴대 전화번호 인증이 필요해요.</p>
+			<h3>정보 제공 및 이용 약관 동의</h3>
+
+			<div class="agree_wrap">
+				<div>
+					<input type="checkbox" id="checkbox">
+					<label for="checkbox"><span>전체동의</span></label>
+				</div>
+				<button type="button" class="dropdown_btn" aria-label="약관 동의 리스트 드롭 다운 버튼"><img src="../img/ico-drop-down.png"
+						alt="상세보기"></button>
+			</div>
+			<div class="info_box">
+				<ul>
+					<li>
+						<span>
+							<input type="checkbox" id="checkbox1">
+							<label for="checkbox1">[필수] 개인정보 수집·이용 동의</label>
+						</span>
+						<a href="./use_agree1.html"><img src="../img/ico-drop-down2.svg" alt="약관보기"></a>
+					</li>
+					<li>
+						<span>
+							<input type="checkbox" id="checkbox2">
+							<label for="checkbox2">[필수] 제3자 제공 동의 및 위탁 (인라이플)</label>
+						</span>
+						<a href="./use_agree2.html"><img src="../img/ico-drop-down2.svg" alt="약관보기"></a>
+					</li>
+					<li>
+						<span>
+							<input type="checkbox" id="checkbox3">
+							<label for="checkbox3">[필수] 통신사 이용약관 동의</label>
+						</span>
+						<a href="./use_agree3.html"><img src="../img/ico-drop-down2.svg" alt="약관보기"></a>
+					</li>
+					<li>
+						<span>
+							<input type="checkbox" id="checkbox4">
+							<label for="checkbox4">[필수] 고유식별정보 처리 동의</label>
+						</span>
+						<a href="./use_agree4.html"><img src="../img/ico-drop-down2.svg" alt="약관보기"></a>
+					</li>
+					<li>
+						<span>
+							<input type="checkbox" id="checkbox5">
+							<label for="checkbox5">[필수] 서비스 이용약관 동의</label>
+						</span>
+						<a href="./use_agree5.html"><img src="../img/ico-drop-down2.svg" alt="약관보기"></a>
+					</li>
+					<li>
+						<span>
+							<input type="checkbox" id="checkbox6">
+							<label for="checkbox6">[선택] 마케팅 수신동의</label>
+						</span>
+						<a href="./use_agree6.html"><img src="../img/ico-drop-down2.svg" alt="약관보기"></a>
+					</li>
+				</ul>
+			</div><!-- info_box -->
+			<div class="certification">
+				<input type="tel" placeholder="전화번호 '-' 없이 입력">
+				<button type="button">인증 요청</button>
+			</div>
+			<p class="error">입력한 전화번호가 기존 등록된 전화번호와 일치하지 않습니다.<br>
+				이미 가입된 휴대 전화번호 입니다. 다시 시도해 주세요.</p>
+			<div class="certification_num">
+				<!-- <input type="text" placeholder="인증번호 입력"> -->
+				<input type="text" placeholder="인증번호 입력" class="error"><span>04:59</span>
+			</div>
+			<p class="error">인증번호가 잘못되었습니다.<br>
+				인증번호가 다시 요청되었습니다.</p>
+			<!-- <button type="button" disabled class="join_btn">약관 동의하고 디베이 시작하기</button> -->
+			<button type="button" class="join_btn">약관 동의하고 디베이 시작하기</button>
+		</div><!-- wrapper -->
+		<nav>
+			<ul>
+				<li><a href="#" class="active" aria-current="page">홈</a></li>
+				<li><a href="#">견적확인</a></li>
+				<li><a href="#">견적내역</a></li>
+				<li><a href="#">MY</a></li>
+			</ul>
+		</nav><!-- nav -->
+	</div><!-- wrap -->
+	<!-- <div class="modal_wrap">
+		<div class="modal">
+			<p>최저가 견적 요청을 위해<br>
+				최초 한번 휴대폰 인증이 필요해요.</p>
+			<div class="btn_wrap"><button type="button" class="red">인증하기</button></div>
+		</div>
+		<div class="modal">
+			<h5>알림</h5>
+			<p class="small">지금까지 견적요청을 위해<br>
+				입력하신 정보가 모두 초기화됩니다.<br>
+				계속 진행하시겠습니까?</p>
+			<div class="btn_wrap"><button type="button">취소</button><button type="button" class="red">확인</button></div>
+		</div>
+	</div> --><!-- modal_wrap -->
+	<script src="../js/common.js"></script>
+</body>
+
+</html>

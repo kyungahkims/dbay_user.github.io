@@ -1,0 +1,208 @@
+.wrap {
+  background-color: #fff;
+}
+
+header {
+  background-color: #fff;
+}
+header h2 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 14px;
+}
+
+/* bg */
+.bg .bubble {
+  border: 1px solid #eee;
+  background-color: #f7f7f7;
+  margin-top: 20px;
+}
+.bg .bubble p {
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.38;
+  letter-spacing: -0.16px;
+}
+.bg .bubble p span {
+  color: #202020;
+  white-space: wrap;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+.bg .bubble::after {
+  border-left: 20px solid #f7f7f7;
+}
+
+.wing {
+  padding-bottom: 75px;
+  /* product_select */
+  /* product_details */
+}
+.wing .list_wrap2 {
+  padding-left: 0;
+  padding-right: 0;
+  padding: 20px 0 0 0;
+  background-color: #f7f7f7;
+}
+.wing .search {
+  margin: 0 0 22px 0;
+}
+.wing .search input {
+  border: 1px solid #eee;
+  background-color: #fff;
+}
+.wing .product_info_wrap button {
+  color: #fff;
+  border-radius: 18px;
+  background-color: #f53b3b;
+  padding: 8px 14px;
+}
+.wing .product_info_wrap button:hover {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+}
+.wing .hidden {
+  height: 360px;
+  overflow: hidden;
+}
+.wing .open_btn {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: -5px;
+  width: 100%;
+  height: 53px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  border-radius: 8px;
+  border: 1px solid #000;
+  background-color: #fff;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.wing .open_btn::after {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: url("../img/ico-more.svg") no-repeat center;
+  margin-left: 8px;
+}
+.wing .open_btn.active::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.wing .product_wrap {
+  background-color: #fff;
+  padding: 0 16px 80px;
+}
+.wing .box.details_box {
+  display: block !important;
+  margin: 0 16px;
+}
+.wing .box.details_box:not(:last-child) {
+  margin-bottom: 16px;
+}
+.wing .box.details_box .company {
+  font-size: 16px;
+}
+.wing .box.details_box .product_name {
+  font-size: 18px;
+}
+.wing .box.details_box .model_number {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 2px;
+}
+.wing .product_details2 {
+  padding: 27px 14px 0;
+}
+.wing .product_details2 li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  font-size: 14px;
+}
+.wing .product_details2 li:not(:last-child) {
+  margin-bottom: 8px;
+}
+.wing .product_details2 li div {
+  min-width: 110px;
+  max-width: 110px;
+  font-weight: 500;
+}
+.wing .product_details2 li p {
+  text-align: right;
+  color: #555;
+}
+.wing .add_details {
+  list-style: initial;
+  font-size: 13px;
+  line-height: 1.54;
+  color: #202020;
+  padding-left: 16px;
+  margin-top: 27px;
+}
+.wing .add_details li:not(:last-child) {
+  margin-bottom: 12px;
+}
+.wing .option_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: calc(100% - 24px);
+  height: 40px;
+  font-size: 14px;
+  color: #000;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  margin: 38px 12px 0;
+}
+.wing .option_btn::after {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: url("../img/ico-more.svg") no-repeat center;
+  margin-left: 8px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+.wing .details_btn {
+  position: fixed;
+  max-width: 460px;
+  margin: auto;
+  bottom: 0;
+  width: 100%;
+  height: 48px;
+  font-size: 16px;
+  color: #fff;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(245, 59, 59, 0.4);
+          box-shadow: 0 2px 4px 0 rgba(245, 59, 59, 0.4);
+  background-color: #f53b3b;
+}
+.wing .details_btn:hover {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+}/*# sourceMappingURL=product.css.map */

@@ -1,0 +1,27 @@
+.wrap {
+  position: relative;
+  text-align: center;
+}
+.wrap::before {
+  content: "";
+  display: inline-block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: url("../img/img-full-splash.png") no-repeat bottom/cover;
+}
+.wrap .splash_cont {
+  position: absolute;
+  width: 100%;
+  top: 200px;
+}
+.wrap p {
+  font-size: 16px;
+  font-weight: normal;
+  color: #fff;
+  margin-bottom: 4px;
+}
+.wrap .logo {
+  max-width: 200px;
+}/*# sourceMappingURL=splash.css.map */

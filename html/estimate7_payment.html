@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/estimate.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+	<script src="../js/jquery-3.5.1.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+	<title>dbay</title>
+</head>
+
+<body>
+	<div class="wrap">
+		<header>
+			<div class="flex-c"><a href="#" aria-label="이전 페이지로 돌아가기">
+					<img src="../img/ico-back.svg" alt="이전 페이지로 돌아가기">
+				</a>
+				<h2>결제내역</h2>
+			</div>
+			<button type="button" aria-label="알림 확인 버튼"><img src="../img/ico_alram.png" alt="알림"></button>
+		</header><!-- header -->
+		<div class="wrapper">
+			<div class="payment_box">
+				<ul class="box">
+					<li>
+						<span class="num_name">입찰권수</span>
+						<strong class="num"><span>15</span>개</strong>
+					</li>
+					<li>
+						<span class="price_name">충전금액</span>
+						<div class="price">4,500원</div>
+					</li>
+				</ul>
+				<button type="button">충전하기</button>
+				<div class="calendar_wrap">
+					<div class="calendar"><input type="text" id="dateInput" value=""></div>
+					<span></span>
+					<div class="calendar"><input type="text" id="dateInput2" value=""></div>
+				</div>
+			</div>
+			<div class="payment_wrap">
+				<div class="tab_wrap">
+					<button type="button" class="tab"><span>전체</span></button>
+					<button type="button" class="tab"><span>충전</span></button>
+					<button type="button" class="tab"><span>사용</span></button>
+					<button type="button" class="tab"><span>미선정</span></button>
+					<button type="button" class="tab"><span>환불</span></button>
+				</div>
+				<div class="total">전체<span>6</span>개</div>
+				<ul class="payment_list">
+					<li>
+						<span class="bidding_num">입찰번호 00000001</span>
+						<div class="payment_detail">
+							<div class="left">
+								<h5>입찰<span>(대기중)</span></h5>
+								<div class="bidding_date">2025-02-09 19:09</div>
+							</div>
+							<div class="right">
+								<div class="num"><strong>-21</strong>개</div>
+								<span class="view">상세보기</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<span class="bidding_num">입찰번호 00000001</span>
+						<div class="payment_detail">
+							<div class="left">
+								<h5>입찰<span>(미선정)</span></h5>
+								<div class="bidding_date">2025-02-09 19:09</div>
+							</div>
+							<div class="right">
+								<div class="num"><strong>-21</strong>개</div>
+								<span class="view">상세보기</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<span class="bidding_num">입찰번호 00000001</span>
+						<div class="payment_detail">
+							<div class="left">
+								<h5>미선정</h5>
+								<div class="bidding_date">2025-02-09 19:09</div>
+							</div>
+							<div class="right">
+								<div class="num red"><strong>+21</strong>개</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="payment_detail">
+							<div class="left">
+								<h5>입찰<span>(선정완료)</span></h5>
+								<div class="bidding_date">2025-02-09 19:09</div>
+							</div>
+							<div class="right">
+								<div class="num"><strong>-21</strong>개</div>
+								<span class="view">상세보기</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="payment_detail">
+							<div class="left">
+								<h5>환불</h5>
+								<div class="bidding_date">2025-02-09 19:09</div>
+							</div>
+							<div class="right">
+								<div class="num"><strong>-21</strong>개</div>
+								<span class="price">6,000원</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="payment_detail">
+							<div class="left">
+								<h5>충전</h5>
+								<div class="bidding_date">2025-02-09 19:09</div>
+							</div>
+							<div class="right">
+								<div class="num red"><strong>+1,000</strong>개</div>
+								<span class="price red">6,000원</span>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div><!-- wrapper -->
+		<nav>
+			<ul>
+				<li><a href="#">홈</a></li>
+				<li><a href="#" class="active" aria-current="page">견적확인</a></li>
+				<li><a href="#">마켓</a></li>
+				<li><a href="#">MY</a></li>
+			</ul>
+		</nav><!-- nav -->
+	</div><!-- wrap -->
+	<script src="../js/common.js"></script>
+</body>
+
+</html>

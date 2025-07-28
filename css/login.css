@@ -1,0 +1,110 @@
+@charset "UTF-8";
+.wrap {
+  text-align: center;
+  background-color: #fff;
+  padding: 24px;
+  overflow-y: auto;
+}
+.wrap .swiper {
+  max-width: 312px;
+}
+.wrap .swiper-slide {
+  margin-bottom: 14px;
+}
+.wrap .swiper-slide::before {
+  content: "";
+  display: inline-block;
+  width: 160px;
+  height: 160px;
+  margin-top: 48px;
+}
+.wrap .swiper-slide:nth-child(1)::before {
+  background: url("../img/img-login-01.png") no-repeat center;
+}
+.wrap .swiper-slide:nth-child(2)::before {
+  background: url("../img/img-login-02.png") no-repeat center;
+}
+.wrap h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 23px;
+}
+.wrap p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.43;
+  color: #555;
+  margin-top: 9px;
+}
+.wrap .login_com a {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 312px;
+  height: 48px;
+  font-size: 16px;
+  color: #382529;
+  border-radius: 100px;
+  margin: 0 auto 12px;
+}
+.wrap .login_com a::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 24px;
+  width: 18px;
+  height: 18px;
+}
+.wrap .login_com a.naver {
+  color: #fff;
+  background-color: #17ce5f;
+}
+.wrap .login_com a.naver::before {
+  background: url("../img/ico-naver.png") no-repeat center;
+}
+.wrap .login_com a.kakao {
+  background-color: #ffe600;
+}
+.wrap .login_com a.kakao::before {
+  background: url("../img/ico-kakao2.png") no-repeat center;
+}
+.wrap .login_com a.google {
+  background-color: #eee;
+}
+.wrap .login_com a.google::before {
+  background: url("../img/ico-google.png") no-repeat center;
+}
+.wrap .no_ri {
+  font-size: 12px;
+  color: #382529;
+}
+
+/* pagination-wrap 공통 */
+.pagination-wrap {
+  margin-bottom: 11px;
+}
+.pagination-wrap .swiper-pagination {
+  position: relative;
+}
+.pagination-wrap .swiper-pagination .swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+  background-color: #ddd;
+  opacity: 1;
+  margin: 0 2px !important;
+}
+.pagination-wrap .swiper-pagination .swiper-pagination-bullet-active {
+  width: 12px;
+  height: 6px;
+  border-radius: 4px;
+  background-color: #aaa;
+  opacity: 1;
+}/*# sourceMappingURL=login.css.map */

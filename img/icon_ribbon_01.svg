@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="55.747" height="27.078" viewBox="0 0 55.747 27.078">
+  <g id="그룹_753" data-name="그룹 753" transform="translate(-158.071 -91.537)">
+    <g id="icon_ribbon_01" transform="translate(158.07 91.537)">
+      <path id="패스_14136" data-name="패스 14136" d="M8.727,0,0,17.739H55.747V0Z" fill="#f53b3b"/>
+      <path id="패스_14137" data-name="패스 14137" d="M1183,435v9.339l7.5-9.339Z" transform="translate(-1134.756 -417.261)" fill="#4c0009"/>
+    </g>
+    <text id="마감임박" transform="translate(189 104)" fill="#fff" font-size="10" font-family="SpoqaHanSansNeo-Medium, Spoqa Han Sans Neo" font-weight="500"><tspan x="-18.4" y="0">마감임박</tspan></text>
+  </g>
+</svg>

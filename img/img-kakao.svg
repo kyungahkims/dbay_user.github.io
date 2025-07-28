@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <defs>
+        <clipPath id="xtm9kroqha">
+            <path data-name="사각형 2198" transform="translate(-.046 .079)" style="fill:none" d="M0 0h24v27H0z"/>
+        </clipPath>
+        <clipPath id="ps2xup1rzb">
+            <path data-name="사각형 2197" transform="translate(-.046 .08)" style="fill:none" d="M0 0h24v27H0z"/>
+        </clipPath>
+        <clipPath id="rboervstyc">
+            <path data-name="사각형 2196" style="fill:none" d="M0 0h13.808v21.012H0z"/>
+        </clipPath>
+    </defs>
+    <g transform="translate(-272 -116.231)">
+        <rect data-name="사각형 2195" width="40" height="40" rx="8" transform="translate(272 116.231)" style="fill:#fee800"/>
+        <g data-name="그룹 617">
+            <g data-name="그룹 616" transform="translate(280.046 123.152)" style="clip-path:url(#xtm9kroqha)">
+                <g data-name="그룹 615">
+                    <g data-name="그룹 614" style="clip-path:url(#ps2xup1rzb)">
+                        <path data-name="패스 6963" d="M11.914 0h-.2A11.776 11.776 0 0 0 0 11.842v.3a11.86 11.86 0 0 0 6.137 10.417 4.727 4.727 0 0 1-.795 1.687c-.5.674-1.121 1.459-1.408 1.769s-.026.451.834.228a19.542 19.542 0 0 0 4.014-1.716c.605-.353.959-.556 1.21-.685a11.531 11.531 0 0 0 1.719.142h.2a11.778 11.778 0 0 0 11.714-11.842v-.3A11.777 11.777 0 0 0 11.914 0M5.65 11.643h2.51v2.515H5.65a1.507 1.507 0 0 1-1.008-.341 1.135 1.135 0 0 1-.393-.926 1.111 1.111 0 0 1 .4-.906 1.493 1.493 0 0 1 1-.341m11.783 1.124a4.04 4.04 0 0 1-3.316 1.407h-1.7v-2.518h.933a2.127 2.127 0 0 0 1.6-.567 1.993 1.993 0 0 0 .526-1.454 1.878 1.878 0 0 0-.59-1.338 1.969 1.969 0 0 0-1.37-.493H11.7v9.385a1.8 1.8 0 0 1-.383 1.168 1.264 1.264 0 0 1-1.046.461 1.307 1.307 0 0 1-1.059-.464 1.741 1.741 0 0 1-.4-1.165V7.066a1.785 1.785 0 0 1 .467-1.318 1.75 1.75 0 0 1 1.305-.474h3.131a4.592 4.592 0 0 1 3.344 1.107 4.448 4.448 0 0 1 .728.933 4.718 4.718 0 0 1 .484 1.126 4.45 4.45 0 0 1 .164 1.182 4.779 4.779 0 0 1-1 3.145" transform="translate(.27 .262)" style="fill:#3e2a2e"/>
+                        <g data-name="그룹 613" style="opacity:.5">
+                            <g data-name="그룹 612">
+                                <g data-name="그룹 611" style="clip-path:url(#rboervstyc)" transform="translate(.828 1.17)">
+                                    <path data-name="패스 6964" d="M7.537 22.864a10.957 10.957 0 0 1-5.672-9.626v-.277A10.882 10.882 0 0 1 12.687 2.018h.188a10.77 10.77 0 0 1 2.085.205 10.668 10.668 0 0 0-2.8-.371h-.19A10.882 10.882 0 0 0 1.152 12.794v.277a10.959 10.959 0 0 0 5.67 9.629z" transform="translate(-1.152 -1.852)" style="fill:#a87e84"/>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

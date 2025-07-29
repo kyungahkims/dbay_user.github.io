@@ -58,7 +58,6 @@ header h2 {
   /* IE/Edge */
   scrollbar-width: none;
   margin: 0;
-  overflow: unset;
 }
 .slide .slide_box {
   position: relative;
@@ -86,6 +85,7 @@ header h2 {
   padding: 0 9px 0 9px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin-top: 7px;
 }
 .slide .slide_box:nth-child(1) {
   margin-left: 16px;
@@ -446,4 +446,4 @@ header h2 {
   border-radius: 16px;
   background-color: #f3f3f3;
   margin-top: 25px;
-}
+}/*# sourceMappingURL=estimate_confirm.css.map */

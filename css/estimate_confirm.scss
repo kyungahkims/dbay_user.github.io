@@ -61,7 +61,6 @@ header {
 	/* IE/Edge */
 	scrollbar-width: none;
 	margin: 0;
-	overflow: unset;
 
 	.slide_box {
 		position: relative;
@@ -77,6 +76,7 @@ header {
 		background-color: #fff;
 		padding: 0 9px 0 9px;
 		box-sizing: border-box;
+		margin-top: 7px;
 
 		&:nth-child(1) {
 			margin-left: 16px;

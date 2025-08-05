@@ -1163,7 +1163,7 @@ nav ul li:nth-child(4) a.active::before {
   top: 25px;
   left: -75px;
   width: 300px;
-  white-space: wrap;
+  white-space: normal;
   border: 1px solid #ddd;
   border-radius: 8px;
   background-color: #fff;

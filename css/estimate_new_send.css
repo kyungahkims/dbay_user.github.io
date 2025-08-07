@@ -84,6 +84,7 @@ header h2 {
 .estimate_box3 .blue span input[readonly] {
   color: #3b6df5 !important;
   background: #fff !important;
+  opacity: 1 !important;
 }
 .estimate_box1 .red,
 .estimate_box2 .red,
@@ -103,6 +104,7 @@ header h2 {
 .estimate_box3 .red input[readonly] {
   color: #f53b3b !important;
   background: #fff !important;
+  opacity: 1 !important;
 }
 
 /* estimate_box1 */
@@ -345,6 +347,7 @@ header h2 {
 }
 .estimate_box2 .box_body .box_form .box_sub_form li > div input[readonly] {
   background: #fff !important;
+  opacity: 1 !important;
   padding-top: 0;
   padding-bottom: 0;
 }

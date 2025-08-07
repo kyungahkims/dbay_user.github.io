@@ -74,6 +74,7 @@ header {
 			input[readonly] {
 				color: #3b6df5 !important;
 				background: #fff !important;
+				opacity: 1 !important;
 			}
 		}
 	}
@@ -89,6 +90,7 @@ header {
 		input[readonly] {
 			color: #f53b3b !important;
 			background: #fff !important;
+			opacity: 1 !important;
 		}
 	}
 
@@ -298,6 +300,7 @@ header {
 
 						input[readonly] {
 							background: #fff !important;
+							opacity: 1 !important;
 							padding-top: 0;
 							padding-bottom: 0;
 						}

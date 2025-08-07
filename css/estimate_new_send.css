@@ -76,14 +76,14 @@ header h2 {
 .estimate_box3 .blue span {
   color: #3b6df5;
 }
-.estimate_box1 .blue input:disabled,
-.estimate_box1 .blue span:disabled,
-.estimate_box2 .blue input:disabled,
-.estimate_box2 .blue span:disabled,
-.estimate_box3 .blue input:disabled,
-.estimate_box3 .blue span:disabled {
+.estimate_box1 .blue input input[readonly],
+.estimate_box1 .blue span input[readonly],
+.estimate_box2 .blue input input[readonly],
+.estimate_box2 .blue span input[readonly],
+.estimate_box3 .blue input input[readonly],
+.estimate_box3 .blue span input[readonly] {
   color: #3b6df5 !important;
-  background: #fff;
+  background: #fff !important;
 }
 .estimate_box1 .red,
 .estimate_box2 .red,
@@ -98,14 +98,11 @@ header h2 {
 .estimate_box3 .red span {
   color: #f53b3b;
 }
-.estimate_box1 .red input:disabled,
-.estimate_box1 .red span:disabled,
-.estimate_box2 .red input:disabled,
-.estimate_box2 .red span:disabled,
-.estimate_box3 .red input:disabled,
-.estimate_box3 .red span:disabled {
+.estimate_box1 .red input[readonly],
+.estimate_box2 .red input[readonly],
+.estimate_box3 .red input[readonly] {
   color: #f53b3b !important;
-  background: #fff;
+  background: #fff !important;
 }
 
 /* estimate_box1 */
@@ -321,12 +318,6 @@ header h2 {
   background-color: #f3f3f3;
   padding: 5px;
 }
-.estimate_box2 .box_body .box_form .box_sub_form li > div input:disabled {
-  color: #202020;
-  background: #fff;
-  padding-top: 0;
-  padding-bottom: 0;
-}
 .estimate_box2 .box_body .box_form .box_sub_form li > div input::-webkit-input-placeholder {
   font-size: 11px;
   font-weight: normal;
@@ -351,6 +342,11 @@ header h2 {
   font-size: 11px;
   font-weight: normal;
   color: #a8a8a8;
+}
+.estimate_box2 .box_body .box_form .box_sub_form li > div input[readonly] {
+  background: #fff !important;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .estimate_box2 .box_body .box_form1 {
   padding: 22px 0 11px;

@@ -155,14 +155,25 @@
 			<button type="button" class="sel_btn2">다른 요금제 다시 선택할게</button>
 		</div><!-- wings -->
 	</div><!-- wrap -->
-	<!-- <div class="modal_wrap">
-		<div class="modal">
-			<h3>견적요청 완료!</h3>
-			<p>휴대폰 견적요청이 완료되었습니다.<br>최저가 알림을 받아보세요.</p>
-		</div>
-	</div> -->
 	<!-- modal_wrap -->
 	<!-- <div class="modal_wrap">
+		<div class="modal">
+			<h3>견적 요청이 완료 되었습니다</h3>
+			<div class="modal_box">
+				<p><strong>자동 등록</strong>하고 편리하게 이용하세요.</p>
+				<ul>
+					<li>'동일 상품' 견적 요청시</li>
+					<li>'방금 작성한 견적서'가 자동으로 발송!</li>
+					<li>반복 업무를 줄여보세요!</li>
+				</ul>
+			</div>
+			<div class="btn_wrap">
+				<button type="button" class="no_btn">아니오</button>
+				<button type="button" class="yes_btn">등록해주세요</button>
+			</div>
+		</div>
+	</div> -->
+	<div class="modal_wrap">
 		<div class="modal2">
 			<div class="modal_product">
 				<div class="product_img"><img src="../img/img_phone.png" alt="아이폰15"></div>
@@ -173,7 +184,8 @@
 				</ul>
 			</div>
 			<div class="modal_body">
-				<p>요청하신 내용으로 견적을 진행할까요?</p>
+				<p>고객님의 요청을 반영한 견적<br>
+					진행하시겠습니까?</p>
 				<ul>
 					<li><span>성인</span>본인(만 18세 이하)</li>
 					<li><span>월 희망요금</span>3만원 이하</li>
@@ -181,13 +193,21 @@
 					<li><span>이용중인 통신사</span>SKT</li>
 					<li><span>약정기간</span>1년</li>
 				</ul>
+				<div class="comfirm">
+					<div class="title">확인사항</div>
+					<div class="check">
+						<input type="checkbox" id="checkbox">
+						<label for="checkbox">요청하신 견적이 마감되면 선정된<br>
+							딜러로부터 연락이 올 거예요!</label>
+					</div>
+				</div>
 			</div>
 			<div class="btn_wrap">
 				<button type="button" class="no_btn">아니오</button>
-				<button type="button" class="yes_btn">네 진행해주세요</button>
+				<button type="button" class="yes_btn" disabled>네 진행해주세요</button>
 			</div>
 		</div>
-	</div> -->
+	</div>
 	<script src="../js/common.js"></script>
 </body>
 

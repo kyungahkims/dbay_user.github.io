@@ -257,6 +257,23 @@ $('.question_wrap').click(function (e) {
 	e.stopPropagation();
 });
 
+
+/* 알림 상세 타이틀 높이 값 */
+function onResize() {
+	$(".notification_cont").css("padding-top", $(".notification_title").outerHeight() + 16 + "px");
+}
+
+$(window).resize(onResize).trigger("resize");
+
+/* 모달 동의 체크 시 버튼 활성화 */
+$('.modal2 #checkbox').on('change', function () {
+	if ($(this).is(':checked')) {
+		$('.yes_btn').removeAttr('disabled');
+	} else {
+		$('.yes_btn').attr('disabled', true);
+	}
+});
+
 /* 날짜 선택 라이브러리 */
 $('#dateInput, #dateInput2').daterangepicker({
 	singleDatePicker: true,

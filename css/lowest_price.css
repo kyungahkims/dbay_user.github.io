@@ -397,8 +397,7 @@ header h2 {
 }
 .modal_wrap .modal {
   position: relative;
-  width: 256px;
-  height: 160px;
+  width: 280px;
   text-align: center;
   border-radius: 12px;
   background-color: #fff;
@@ -415,14 +414,67 @@ header h2 {
   background: url("../img/img-pop-complete.png") no-repeat center;
 }
 .modal_wrap .modal h3 {
-  font-size: 16px;
-  font-weight: 500;
-  margin: 51px auto 8px;
+  font-size: 18px;
+  margin-top: 45px;
 }
-.modal_wrap .modal p {
+.modal_wrap .modal .modal_box {
+  border-radius: 8px;
+  background-color: #f8f8f8;
+  padding: 22px 16px 24px;
+  margin: 20px 20px 30px;
+}
+.modal_wrap .modal .modal_box p {
   font-size: 14px;
-  line-height: 1.43;
-  color: #999;
+  font-weight: bold;
+  line-height: 1.36;
+  margin-bottom: 26px;
+}
+.modal_wrap .modal .modal_box p strong {
+  color: #f53b3b;
+  border-bottom: 2px solid #f53b3b;
+}
+.modal_wrap .modal .modal_box ul {
+  text-align: left;
+}
+.modal_wrap .modal .modal_box ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+  color: #616161;
+}
+.modal_wrap .modal .modal_box ul li:not(:last-child) {
+  margin-bottom: 7px;
+}
+.modal_wrap .modal .modal_box ul li::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url("../img/icon-check-01.svg") no-repeat center;
+  margin-right: 3px;
+}
+.modal_wrap .modal .btn_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 0 0 12px 12px;
+  overflow: hidden;
+}
+.modal_wrap .modal .btn_wrap button {
+  width: 100%;
+  height: 44px;
+  font-size: 14px;
+}
+.modal_wrap .modal .btn_wrap button.no_btn {
+  color: #777;
+  background-color: #e3e3e3;
+}
+.modal_wrap .modal .btn_wrap button.yes_btn {
+  color: #fff;
+  background-color: #f53b3b;
 }
 .modal_wrap .modal2 {
   width: 280px;
@@ -442,6 +494,9 @@ header h2 {
 .modal_wrap .modal2 .modal_product .product_img {
   border: 1px solid #f3f3f3;
 }
+.modal_wrap .modal2 .modal_product .product_name {
+  margin-bottom: 6px;
+}
 .modal_wrap .modal2 .modal_body {
   padding: 28px 20px 27px;
 }
@@ -450,7 +505,10 @@ header h2 {
   font-size: 14px;
   line-height: 1.43;
   color: #000;
-  margin-bottom: 33px;
+  margin-bottom: 16px;
+}
+.modal_wrap .modal2 .modal_body ul {
+  padding-bottom: 17px;
 }
 .modal_wrap .modal2 .modal_body ul li {
   display: -webkit-box;
@@ -460,17 +518,60 @@ header h2 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 14px;
+  font-weight: 500;
   text-align: right;
-  color: #555;
+  color: #202020;
 }
 .modal_wrap .modal2 .modal_body ul li:not(:last-child) {
   margin-bottom: 6px;
 }
 .modal_wrap .modal2 .modal_body ul li span {
-  font-weight: 500;
+  font-weight: normal;
   text-align: left;
-  color: #202020;
+  color: #555;
   white-space: nowrap;
+}
+.modal_wrap .modal2 .modal_body .comfirm .title {
+  font-size: 14px;
+  padding: 19px 0 12px;
+  border-top: 1px solid #f4f4f4;
+}
+.modal_wrap .modal2 .modal_body .comfirm .check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.modal_wrap .modal2 .modal_body .comfirm .check h5 {
+  font-size: 14px;
+  margin: 19px 12px;
+}
+.modal_wrap .modal2 .modal_body .comfirm .check label {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.57;
+  color: #777;
+}
+.modal_wrap .modal2 .modal_body .comfirm .check input[type=checkbox] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 22px;
+  height: 22px;
+  background: url("../img/mo-check-off.svg") left center no-repeat;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  border: none;
+  cursor: pointer;
+  margin-right: 8px;
+}
+.modal_wrap .modal2 .modal_body .comfirm .check input[type=checkbox]:checked {
+  background: url("../img/mo-check-on.svg") left center no-repeat;
+}
+.modal_wrap .modal2 .modal_body .comfirm .check input[type=checkbox]:disabled {
+  border: 1px solid #d8d8d8;
+  background: none;
+  background-color: #ddd;
 }
 .modal_wrap .modal2 .btn_wrap {
   display: -webkit-box;
@@ -489,4 +590,8 @@ header h2 {
 .modal_wrap .modal2 .btn_wrap button.yes_btn {
   color: #fff;
   background-color: #f53b3b;
+}
+.modal_wrap .modal2 .btn_wrap button.yes_btn:disabled {
+  color: #ddd;
+  background-color: #999;
 }/*# sourceMappingURL=lowest_price.css.map */

@@ -402,8 +402,7 @@ header {
 
 	.modal {
 		position: relative;
-		width: 256px;
-		height: 160px;
+		width: 280px;
 		text-align: center;
 		border-radius: 12px;
 		background-color: #fff;
@@ -420,15 +419,72 @@ header {
 		}
 
 		h3 {
-			font-size: 16px;
-			font-weight: 500;
-			margin: 51px auto 8px;
+			font-size: 18px;
+			margin-top: 45px;
 		}
 
-		p {
-			font-size: 14px;
-			line-height: 1.43;
-			color: #999;
+		.modal_box {
+			border-radius: 8px;
+			background-color: #f8f8f8;
+			padding: 22px 16px 24px;
+			margin: 20px 20px 30px;
+
+			p {
+				font-size: 14px;
+				font-weight: bold;
+				line-height: 1.36;
+				margin-bottom: 26px;
+
+				strong {
+					color: #f53b3b;
+					border-bottom: 2px solid #f53b3b;
+				}
+			}
+
+			ul {
+				text-align: left;
+
+				li {
+					display: flex;
+					align-items: center;
+					font-size: 12px;
+					color: #616161;
+
+					&:not(:last-child) {
+						margin-bottom: 7px;
+					}
+
+					&::before {
+						content: "";
+						width: 16px;
+						height: 16px;
+						background: url('../img/icon-check-01.svg') no-repeat center;
+						margin-right: 3px;
+					}
+				}
+			}
+		}
+
+		.btn_wrap {
+			display: flex;
+			border-radius: 0 0 12px 12px;
+			overflow: hidden;
+
+			button {
+				width: 100%;
+				height: 44px;
+				font-size: 14px;
+
+				&.no_btn {
+					color: #777;
+					background-color: #e3e3e3;
+				}
+
+				&.yes_btn {
+					color: #fff;
+					background-color: #f53b3b;
+				}
+			}
 		}
 	}
 
@@ -446,6 +502,10 @@ header {
 			.product_img {
 				border: 1px solid #f3f3f3;
 			}
+
+			.product_name {
+				margin-bottom: 6px;
+			}
 		}
 
 		.modal_body {
@@ -456,27 +516,77 @@ header {
 				font-size: 14px;
 				line-height: 1.43;
 				color: #000;
-				margin-bottom: 33px;
+				margin-bottom: 16px;
 			}
 
 			ul {
+				padding-bottom: 17px;
 
 				li {
 					display: flex;
 					justify-content: space-between;
 					font-size: 14px;
+					font-weight: 500;
 					text-align: right;
-					color: #555;
+					color: #202020;
 
 					&:not(:last-child) {
 						margin-bottom: 6px;
 					}
 
 					span {
-						font-weight: 500;
+						font-weight: normal;
 						text-align: left;
-						color: #202020;
+						color: #555;
 						white-space: nowrap;
+					}
+				}
+			}
+
+			.comfirm {
+				.title {
+					font-size: 14px;
+					padding: 19px 0 12px;
+					border-top: 1px solid #f4f4f4;
+				}
+
+				.check {
+					display: flex;
+
+
+					h5 {
+						font-size: 14px;
+						margin: 19px 12px;
+					}
+
+					label {
+						font-size: 14px;
+						font-weight: 300;
+						line-height: 1.57;
+						color: #777;
+					}
+
+					input[type="checkbox"] {
+						appearance: none;
+						width: 22px;
+						height: 22px;
+						background: url('../img/mo-check-off.svg') left center no-repeat;
+						margin: 0;
+						padding: 0;
+						border-radius: 0;
+						border: none;
+						cursor: pointer;
+						margin-right: 8px;
+					}
+
+					input[type="checkbox"]:checked {
+						background: url('../img/mo-check-on.svg') left center no-repeat;
+					}
+
+					input[type="checkbox"]:disabled {
+						border: 1px solid #d8d8d8;
+						background: none;
+						background-color: #ddd;
 					}
 				}
 			}
@@ -498,6 +608,11 @@ header {
 				&.yes_btn {
 					color: #fff;
 					background-color: #f53b3b;
+
+					&:disabled {
+						color: #ddd;
+						background-color: #999;
+					}
 				}
 			}
 		}

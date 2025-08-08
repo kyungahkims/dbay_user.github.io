@@ -525,6 +525,15 @@ header h2 {
 }
 
 .sel_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 18px 0 12px;
   -webkit-box-shadow: 0 2px 4px 0 rgba(245, 59, 59, 0.4);
           box-shadow: 0 2px 4px 0 rgba(245, 59, 59, 0.4);

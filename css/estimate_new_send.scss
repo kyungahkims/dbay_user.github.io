@@ -531,6 +531,9 @@ header {
 }
 
 .sel_btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	margin: 18px 0 12px;
 	box-shadow: 0 2px 4px 0 rgba(245, 59, 59, 0.4);
 }

@@ -68,6 +68,11 @@ header h2 {
   border-radius: 8px 8px 0 0;
   padding: 12px 16px;
 }
+.estimate_box1 .blue,
+.estimate_box2 .blue,
+.estimate_box3 .blue {
+  color: #3b6df5;
+}
 .estimate_box1 .blue input,
 .estimate_box1 .blue span,
 .estimate_box2 .blue input,
@@ -75,16 +80,6 @@ header h2 {
 .estimate_box3 .blue input,
 .estimate_box3 .blue span {
   color: #3b6df5;
-}
-.estimate_box1 .blue input input[readonly],
-.estimate_box1 .blue span input[readonly],
-.estimate_box2 .blue input input[readonly],
-.estimate_box2 .blue span input[readonly],
-.estimate_box3 .blue input input[readonly],
-.estimate_box3 .blue span input[readonly] {
-  color: #3b6df5 !important;
-  background: #fff !important;
-  opacity: 1 !important;
 }
 .estimate_box1 .red,
 .estimate_box2 .red,
@@ -98,13 +93,6 @@ header h2 {
 .estimate_box3 .red input,
 .estimate_box3 .red span {
   color: #f53b3b;
-}
-.estimate_box1 .red input[readonly],
-.estimate_box2 .red input[readonly],
-.estimate_box3 .red input[readonly] {
-  color: #f53b3b !important;
-  background: #fff !important;
-  opacity: 1 !important;
 }
 
 /* estimate_box1 */
@@ -282,6 +270,7 @@ header h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  white-space: pre;
 }
 .estimate_box2 .box_body .box_form .box_sub_form li .title::before {
   content: "";
@@ -297,9 +286,6 @@ header h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 160px;
-  min-width: 160px;
-  border-radius: 4px;
 }
 .estimate_box2 .box_body .box_form .box_sub_form li > div.price {
   position: relative;
@@ -308,8 +294,7 @@ header h2 {
   padding-right: 22px;
 }
 .estimate_box2 .box_body .box_form .box_sub_form li > div.price span {
-  position: absolute;
-  right: 8px;
+  margin: 0 8px 0 5px;
 }
 .estimate_box2 .box_body .box_form .box_sub_form li > div input {
   width: 100%;
@@ -345,12 +330,6 @@ header h2 {
   font-weight: normal;
   color: #a8a8a8;
 }
-.estimate_box2 .box_body .box_form .box_sub_form li > div input[readonly] {
-  background: #fff !important;
-  opacity: 1 !important;
-  padding-top: 0;
-  padding-bottom: 0;
-}
 .estimate_box2 .box_body .box_form1 {
   padding: 22px 0 11px;
   border-bottom: 1px solid #f4f4f4;
@@ -358,13 +337,16 @@ header h2 {
 .estimate_box2 .box_body .box_form1 .big {
   font-size: 16px;
   font-weight: 500;
-  margin-bottom: 9px;
+  margin-bottom: 14px;
 }
 .estimate_box2 .box_body .box_form1 .big .title {
   color: #000;
 }
 .estimate_box2 .box_body .box_form1 .big div {
   color: #f53b3b;
+}
+.estimate_box2 .box_body .box_form1 .box_sub_form li:not(:last-child) {
+  margin-bottom: 20px;
 }
 .estimate_box2 .box_body .box_form1 .box_sub_form .title {
   color: #f53b3b;

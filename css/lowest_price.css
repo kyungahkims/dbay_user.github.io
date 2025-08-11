@@ -498,7 +498,7 @@ header h2 {
   margin-bottom: 6px;
 }
 .modal_wrap .modal2 .modal_body {
-  padding: 28px 20px 27px;
+  padding: 27px 13px 30px;
 }
 .modal_wrap .modal2 .modal_body p {
   text-align: center;
@@ -508,7 +508,7 @@ header h2 {
   margin-bottom: 16px;
 }
 .modal_wrap .modal2 .modal_body ul {
-  padding-bottom: 17px;
+  padding: 0 8px 28px;
 }
 .modal_wrap .modal2 .modal_body ul li {
   display: -webkit-box;
@@ -531,39 +531,86 @@ header h2 {
   color: #555;
   white-space: nowrap;
 }
+.modal_wrap .modal2 .modal_body .comfirm {
+  border-radius: 10px;
+  -webkit-animation: blinkSmooth 1s infinite;
+          animation: blinkSmooth 1s infinite;
+  overflow: hidden;
+}
+.modal_wrap .modal2 .modal_body .comfirm.active {
+  border: 1px solid #f53b3b;
+  background-color: #f53b3b;
+  -webkit-animation: normal;
+          animation: normal;
+}
 .modal_wrap .modal2 .modal_body .comfirm .title {
   font-size: 14px;
-  padding: 19px 0 12px;
-  border-top: 1px solid #f4f4f4;
+  color: #fff;
+  padding: 9px 11px;
+}
+@-webkit-keyframes blinkSmooth {
+  0% {
+    background-color: #f53b3b;
+    border: 1px solid #f53b3b;
+  }
+  50% {
+    background-color: #999;
+    border: 1px solid #999;
+  }
+  100% {
+    background-color: #f53b3b;
+    border: 1px solid #f53b3b;
+  }
+}
+@keyframes blinkSmooth {
+  0% {
+    background-color: #f53b3b;
+    border: 1px solid #f53b3b;
+  }
+  50% {
+    background-color: #999;
+    border: 1px solid #999;
+  }
+  100% {
+    background-color: #f53b3b;
+    border: 1px solid #f53b3b;
+  }
 }
 .modal_wrap .modal2 .modal_body .comfirm .check {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 19px 7px 18px 8px;
+  background-color: #fff;
+}
+.modal_wrap .modal2 .modal_body .comfirm .check.active {
+  background-color: #ffeded;
 }
 .modal_wrap .modal2 .modal_body .comfirm .check h5 {
   font-size: 14px;
   margin: 19px 12px;
 }
 .modal_wrap .modal2 .modal_body .comfirm .check label {
+  position: relative;
+  top: -1px;
   font-size: 14px;
   font-weight: 300;
   line-height: 1.57;
   color: #777;
+  padding-left: 8px;
 }
 .modal_wrap .modal2 .modal_body .comfirm .check input[type=checkbox] {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  width: 22px;
-  height: 22px;
+  width: 18px;
+  height: 18px;
   background: url("../img/mo-check-off.svg") left center no-repeat;
   margin: 0;
   padding: 0;
   border-radius: 0;
   border: none;
   cursor: pointer;
-  margin-right: 8px;
 }
 .modal_wrap .modal2 .modal_body .comfirm .check input[type=checkbox]:checked {
   background: url("../img/mo-check-on.svg") left center no-repeat;
@@ -572,6 +619,9 @@ header h2 {
   border: 1px solid #d8d8d8;
   background: none;
   background-color: #ddd;
+}
+.modal_wrap .modal2 .modal_body .comfirm .check input[type=checkbox]:checked + label {
+  color: #f53b3b;
 }
 .modal_wrap .modal2 .btn_wrap {
   display: -webkit-box;

@@ -509,7 +509,7 @@ header {
 		}
 
 		.modal_body {
-			padding: 28px 20px 27px;
+			padding: 27px 13px 30px;
 
 			p {
 				text-align: center;
@@ -520,7 +520,7 @@ header {
 			}
 
 			ul {
-				padding-bottom: 17px;
+				padding: 0 8px 28px;
 
 				li {
 					display: flex;
@@ -544,15 +544,47 @@ header {
 			}
 
 			.comfirm {
+				border-radius: 10px;
+				animation: blinkSmooth 1s infinite;
+				overflow: hidden;
+
+				&.active {
+					border: 1px solid #f53b3b;
+					background-color: #f53b3b;
+					animation: normal;
+				}
+
 				.title {
 					font-size: 14px;
-					padding: 19px 0 12px;
-					border-top: 1px solid #f4f4f4;
+					color: #fff;
+					padding: 9px 11px;
+				}
+
+				@keyframes blinkSmooth {
+					0% {
+						background-color: #f53b3b;
+						border: 1px solid #f53b3b;
+					}
+
+					50% {
+						background-color: #999;
+						border: 1px solid #999;
+					}
+
+					100% {
+						background-color: #f53b3b;
+						border: 1px solid #f53b3b;
+					}
 				}
 
 				.check {
 					display: flex;
+					padding: 19px 7px 18px 8px;
+					background-color: #fff;
 
+					&.active {
+						background-color: #ffeded;
+					}
 
 					h5 {
 						font-size: 14px;
@@ -560,23 +592,25 @@ header {
 					}
 
 					label {
+						position: relative;
+						top: -1px;
 						font-size: 14px;
 						font-weight: 300;
 						line-height: 1.57;
 						color: #777;
+						padding-left: 8px;
 					}
 
 					input[type="checkbox"] {
 						appearance: none;
-						width: 22px;
-						height: 22px;
+						width: 18px;
+						height: 18px;
 						background: url('../img/mo-check-off.svg') left center no-repeat;
 						margin: 0;
 						padding: 0;
 						border-radius: 0;
 						border: none;
 						cursor: pointer;
-						margin-right: 8px;
 					}
 
 					input[type="checkbox"]:checked {
@@ -587,6 +621,10 @@ header {
 						border: 1px solid #d8d8d8;
 						background: none;
 						background-color: #ddd;
+					}
+
+					input[type="checkbox"]:checked+label {
+						color: #f53b3b;
 					}
 				}
 			}

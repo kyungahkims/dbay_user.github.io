@@ -209,6 +209,7 @@ $('.box3 .btn').click(function () {
 $('.dropdown_btn').click(function () {
 	$(this).find('img').toggleClass('active');
 	$(this).parent('.agree_wrap').siblings('.info_box').stop().slideToggle('500');
+	$(this).parents('.info_wrap').find('.info_box2').stop().slideToggle('500');
 });
 
 /* 통신사 이용약관 동의 탭 */
@@ -269,8 +270,10 @@ $(window).resize(onResize).trigger("resize");
 $('.modal2 #checkbox').on('change', function () {
 	if ($(this).is(':checked')) {
 		$('.yes_btn').removeAttr('disabled');
+		$('.comfirm ,.check').addClass('active');
 	} else {
 		$('.yes_btn').attr('disabled', true);
+		$('.comfirm ,.check').removeClass('active');
 	}
 });
 

@@ -564,7 +564,7 @@ header h2 {
   overflow: auto;
 }
 .modal_wrap .modal .modal_body ul {
-  padding: 0 3px 35px;
+  padding: 0 3px 25px;
 }
 .modal_wrap .modal .modal_body ul li {
   display: -webkit-box;
@@ -625,11 +625,11 @@ header h2 {
 }
 .modal_wrap .modal .btn_wrap::after {
   position: absolute;
-  bottom: 50px;
+  bottom: 43px;
   content: "";
   display: block;
   width: 100%;
-  height: 38px;
+  height: 40px;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(70%, rgba(255, 255, 255, 0.85)), to(rgba(255, 255, 255, 0)));
   background: linear-gradient(to top, rgba(255, 255, 255, 0.85) 70%, rgba(255, 255, 255, 0) 100%);
   z-index: 1000;

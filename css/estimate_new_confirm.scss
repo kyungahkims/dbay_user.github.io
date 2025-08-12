@@ -14,7 +14,6 @@ header {
 	background: url(../img/icon-question.svg) no-repeat center/contain;
 }
 
-
 .question_wrap2 {
 
 	.question {
@@ -56,7 +55,7 @@ header {
 	height: 100%;
 	background-color: #f3f3f3;
 	overflow-y: auto;
-	padding: 11px 0 140px;
+	padding: 5px 0 140px;
 }
 
 .slide {
@@ -81,7 +80,7 @@ header {
 		box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
 		padding: 0 6px;
 		box-sizing: border-box;
-		margin-top: 10px;
+		margin-top: 16px;
 
 		&:nth-child(1) {
 			margin-left: 16px;
@@ -99,13 +98,13 @@ header {
 			z-index: 2;
 		}
 
-		.up {
+		.new {
 			position: absolute;
-			bottom: 20px;
+			top: -14px;
 			right: -4px;
 			width: 29px;
 			height: 32px;
-			background: url('../img/icon-uparrow.png') no-repeat center;
+			background: url('../img/badge-01.png') no-repeat center;
 			z-index: 2;
 		}
 
@@ -240,7 +239,7 @@ header {
 .d_box {
 	border-radius: 8px;
 	margin: 30px 16px 0;
-	border: solid 1px #f53b3b;
+	border: 1px solid #f53b3b;
 	background-color: #fff;
 	padding: 9px 20px 8px 20px;
 
@@ -264,7 +263,7 @@ header {
 	}
 
 	&.end {
-		border: solid 1px #bababa;
+		border: 1px solid #bababa;
 		background-color: #e9e9e9;
 
 		strong {
@@ -273,15 +272,14 @@ header {
 			}
 		}
 	}
-
 }
 
 .empty_box {
+	text-align: center;
 	border-radius: 8px;
 	background-color: #fff;
 	margin: 20px 16px 0;
 	padding: 25px 12px 30px 12px;
-	text-align: center;
 
 	&.mt_0 {
 		margin-top: 0;
@@ -313,7 +311,6 @@ header {
 		border-radius: 24px;
 		background-color: #f53b3b;
 		padding: 9px 5px;
-		-webkit-transition: all 0.2s;
 		transition: all 0.2s;
 		margin: 23px 0 0 0;
 	}
@@ -457,8 +454,6 @@ header {
 				.info {
 					display: flex;
 					align-items: center;
-
-
 				}
 			}
 
@@ -489,7 +484,6 @@ header {
 					flex: 50%;
 				}
 			}
-
 
 			&>li {
 				div {

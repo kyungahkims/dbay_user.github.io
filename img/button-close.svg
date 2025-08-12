@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <defs>
+        <clipPath id="9sbembn9ta">
+            <path data-name="사각형 2590" transform="translate(9.74 .74)" style="opacity:.52;fill:none" d="M0 0h16v16H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="구성 요소 105 – 4" transform="translate(-9.74 -.74)" style="clip-path:url(#9sbembn9ta)">
+        <path data-name="선 415" style="stroke:#202020;stroke-linecap:round;fill:none" d="m0 0 12 12" transform="translate(11.74 2.74)"/>
+        <path data-name="선 416" style="stroke:#202020;stroke-linecap:round;fill:none" d="M12 0 0 12" transform="translate(11.74 2.74)"/>
+    </g>
+</svg>

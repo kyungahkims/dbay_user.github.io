@@ -594,7 +594,7 @@ header {
 			overflow: auto;
 
 			ul {
-				padding: 0 3px 25px;
+				padding: 0 3px 35px;
 
 				li {
 					display: flex;
@@ -652,7 +652,7 @@ header {
 
 			&::after {
 				position: absolute;
-				bottom: 48px;
+				bottom: 50px;
 				content: "";
 				display: block;
 				width: 100%;

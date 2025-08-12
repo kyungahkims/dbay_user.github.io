@@ -564,7 +564,7 @@ header h2 {
   overflow: auto;
 }
 .modal_wrap .modal .modal_body ul {
-  padding: 0 3px 25px;
+  padding: 0 3px 35px;
 }
 .modal_wrap .modal .modal_body ul li {
   display: -webkit-box;
@@ -625,7 +625,7 @@ header h2 {
 }
 .modal_wrap .modal .btn_wrap::after {
   position: absolute;
-  bottom: 48px;
+  bottom: 50px;
   content: "";
   display: block;
   width: 100%;

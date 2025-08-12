@@ -187,10 +187,6 @@ header h2 {
   height: 10px;
   background-color: #ffe2e2;
   border-radius: 100%;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  -ms-border-radius: 100%;
-  -o-border-radius: 100%;
   margin: 0 2px 0 5px;
 }
 .box .info_wrap {
@@ -513,4 +509,136 @@ header h2 {
   border-radius: 16px;
   background-color: #f3f3f3;
   margin-top: 24px;
+}
+
+/* modal_wrap */
+.modal_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.modal_wrap .modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  width: 100%;
+  max-width: 328px;
+  height: 466px;
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 20px 16px 16px;
+}
+.modal_wrap .modal .modal_head h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+.modal_wrap .modal .modal_head .modal_close_btn {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 17px;
+  right: 19px;
+  background-color: transparent;
+}
+.modal_wrap .modal .modal_head .modal_close_btn::after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url("../img//button-close.svg") no-repeat center/contain;
+  cursor: pointer;
+}
+.modal_wrap .modal .modal_body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: auto;
+}
+.modal_wrap .modal .modal_body ul {
+  padding: 0 3px 25px;
+}
+.modal_wrap .modal .modal_body ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  background-color: #fff;
+  -webkit-box-shadow: 0 4px 2px 0 #eee;
+          box-shadow: 0 4px 2px 0 #eee;
+  padding: 20px 16px 18px;
+  margin-bottom: 10px;
+}
+.modal_wrap .modal .modal_body ul li .lt {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 0;
+}
+.modal_wrap .modal .modal_body ul li .lt strong {
+  display: block;
+  font-size: 12px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.modal_wrap .modal .modal_body ul li .lt div {
+  font-size: 11px;
+  margin-top: 7px;
+}
+.modal_wrap .modal .modal_body ul li .rt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: right;
+}
+.modal_wrap .modal .modal_body ul li .rt span {
+  font-size: 10px;
+  color: #f53b3b;
+  border: 1px solid #f53b3b;
+  padding: 0 5px;
+}
+.modal_wrap .modal .modal_body ul li .rt div {
+  font-size: 14px;
+  font-weight: bold;
+  color: #f53b3b;
+  margin-top: 4px;
+}
+.modal_wrap .modal .btn_wrap {
+  position: relative;
+}
+.modal_wrap .modal .btn_wrap::after {
+  position: absolute;
+  bottom: 48px;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 38px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(70%, rgba(255, 255, 255, 0.85)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.85) 70%, rgba(255, 255, 255, 0) 100%);
+  z-index: 1000;
+}
+.modal_wrap .modal .btn_wrap button {
+  width: 100%;
+  height: 44px;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 24px;
+  background-color: #f53b3b;
 }/*# sourceMappingURL=estimate_new_confirm.css.map */

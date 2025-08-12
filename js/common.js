@@ -91,7 +91,7 @@ $('.filter_btn, .details_btn').click(function () {
 	$('.modal_wrap').css('display', 'flex');
 });
 
-$('.modal_wrap, .sel_btn, .no_btn').click(function () {
+$('.modal_wrap, .sel_btn, .no_btn, .modal_close_btn').click(function () {
 	$('.modal_wrap').css('display', 'none');
 });
 

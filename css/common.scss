@@ -157,6 +157,12 @@ header {
 	button {
 		background-color: transparent;
 	}
+
+	.btn_wrap {
+		display: flex;
+		align-items: center;
+		column-gap: 14px;
+	}
 }
 
 /* bg */
@@ -1082,11 +1088,11 @@ nav {
 	}
 
 	.star_on {
-		background: url('../img/ico_star_on.png') no-repeat center/contain;
+		background: url('../img/ico_star_on.svg') no-repeat center/contain;
 	}
 
 	.star_off {
-		background: url('../img/ico_star_off.png') no-repeat center/contain;
+		background: url('../img/ico_star_off.svg') no-repeat center/contain;
 	}
 }
 

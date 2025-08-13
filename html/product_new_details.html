@@ -23,62 +23,248 @@
 				</a>
 				<h2>휴대폰 상세보기</h2>
 			</div>
-			<button type="button" aria-label="알림 확인 버튼"><img src="../img/ico_alram.png" alt="알림"></button>
+			<div class="btn_wrap">
+				<button type="button" aria-label="알림 확인 버튼"><img src="../img/ico_alram.png" alt="알림"></button>
+				<button type="button" aria-label="더보기 탭 버튼"><img src="../img/icon-tab.png" alt="알림"></button>
+			</div>
 		</header><!-- header -->
 		<div class="wrapper">
-			<div class="list_wrap list_wrap">
-				<div class="box details_box">
-					<div class="flex-bc">
-						<div class="product_img"><img src="../img/img_phone.png" alt="아이폰15"></div>
-						<ul class="product_info_wrap">
-							<li class="company">애플</li>
-							<li class="product_name">아이폰 16 프로 128GB </li>
-							<li class="model_number">출고가 1,550,000원</li>
-						</ul>
+
+			<div class="porduct_swiper swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="../img/main-img-phone.png" alt="상품이미지" class=" img">
+					</div>
+					<div class="swiper-slide">
+						<img src="../img/main-img-phone.jpg" alt="상품이미지" class=" img">
+					</div>
+					<div class="swiper-slide">
+						<img src="../img/main-img-phone2.jpg" alt="상품이미지" class=" img">
 					</div>
 				</div>
-				<div class="hidden">
-					<img src="../img/img-long-01.png" alt="상품이미지" class="img">
+				<div class="color_tab_wrap">
+					<button type="button" aria-label="색상 선택 버튼" class="tab">
+						<span class="color gray" aria-label="회색" role="img"></span>
+					</button>
+					<button type="button" aria-label="색상 선택 버튼" class="tab">
+						<span class="color pink" aria-label="분홍색" role="img"></span>
+					</button>
+					<button type="button" aria-label="색상 선택 버튼" class="tab active">
+						<span class="color yellow" aria-label="노랑색" role="img"></span>
+					</button>
+					<button type="button" aria-label="색상 선택 버튼" class="tab">
+						<span class="color black" aria-label="검정색" role="img"></span>
+					</button>
 				</div>
-				<button type="button" class="open_btn">상품 정보 펼쳐보기</button>
-				<div class="product_wrap">
-					<ul class="product_details2">
-						<li>
-							<div>모델명</div>
-							<p>Apple 아이폰 16 Pro</p>
-						</li>
-						<li>
-							<div>모델번호</div>
-							<p>A3296</p>
-						</li>
-						<li>
-							<div>출시년월</div>
-							<p>2024년 9월</p>
-						</li>
-						<li>
-							<div>RAM</div>
-							<p>8GB</p>
-						</li>
-						<li>
-							<div>무게</div>
-							<p>128g</p>
-						</li>
-						<li>
-							<div>카메라화소</div>
-							<p>4800만 화소</p>
-						</li>
-						<li>
-							<div>디스플레이</div>
-							<p>super retina XDR</p>
-						</li>
-						<li>
-							<div>해상도</div>
-							<p>super retina</p>
-						</li>
-					</ul>
+				<div class="swiper_pagination"></div>
+			</div>
+
+			<ul class="product_wrap">
+				<li class="brand">Apple</li>
+				<li class="product">아이폰 16 프로 128GB 아이폰 16 프로 아이
+					폰 16 프로 128GB 아이폰 16 프로</li>
+				<li class="model">모델명<span>sasdvasdfsdf</span></li>
+				<li class="price">출고가<span>1,200,000원</span></li>
+				<li class="star">4.7<button type="button">(100) ></button></li>
+				<li class="max_price">최대 지원금 <strong>1,000,000</strong>원</li>
+				<li class="mix_price">카드결합시<span>월 <strong>-900,000</strong> 원 할인</span></li>
+			</ul>
+
+			<hr>
+
+			<div class="tab_wrap">
+				<button type="button" class="tab">기기변경</button>
+				<button type="button" class="tab">번호이동</button>
+				<button type="button" class="tab">신규가입</button>
+			</div>
+
+			<div class="graph_wrap">
+				<div class="sub_tab_wrap">
+					<button type="button" class="tab">1주일</button>
+					<button type="button" class="tab">2주일</button>
+					<button type="button" class="tab">4주일</button>
+					<button type="button" class="tab active">8주일</button>
 				</div>
-				<button type="button" class="details_btn">휴대폰 옵션 선택</button>
-			</div><!-- list_wrap -->
+				<p>※ 최근 8주 동안의 지원금 시세를 제공합니다.(최대 지원금 기준)</p>
+				<div class="graph_box">그래프 영역</div>
+			</div>
+
+			<div class="hidden">
+				<img src="../img/img-long-01.png" alt="상품이미지" class="img">
+			</div>
+
+			<button type="button" class="open_btn">상품 정보 펼쳐보기</button>
+
+			<ul class="details">
+				<li>
+					<div>모델명</div>
+					<p>Apple 아이폰 16 Pro</p>
+				</li>
+				<li>
+					<div>모델번호</div>
+					<p>A3296</p>
+				</li>
+				<li>
+					<div>출시년월</div>
+					<p>2024년 9월</p>
+				</li>
+				<li>
+					<div>RAM</div>
+					<p>8GB</p>
+				</li>
+				<li>
+					<div>무게</div>
+					<p>128g</p>
+				</li>
+				<li>
+					<div>카메라화소</div>
+					<p>4800만 화소</p>
+				</li>
+				<li>
+					<div>디스플레이</div>
+					<p>super retina XDR</p>
+				</li>
+				<li>
+					<div>해상도</div>
+					<p>super retina</p>
+				</li>
+			</ul>
+
+			<hr>
+
+			<div class="product_review_wrap">
+				<div class="riview_head">
+					<h3 class="title">상품리뷰</h3>
+					<a href="#">작성하기</a>
+				</div>
+				<p class="cont">상품에 대한 실사용 리뷰를 확인 할 수 있습니다.</p>
+				<ul>
+					<li>
+						<h5>총 평점</h5>
+						<div class="star_wrap">
+							<span class="star_on"></span>
+							<span class="star_on"></span>
+							<span class="star_on"></span>
+							<span class="star_on"></span>
+							<span class="star_off"></span>
+							<strong>4.0</strong>
+						</div>
+					</li>
+					<li>
+						<h5>리뷰수</h5>
+						<div class="review_wrap">
+							<strong>20</strong>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<hr>
+
+			<div class="review_list_wrap">
+				<h3 class="title">리뷰 전체</h3>
+				<ul class="review_list">
+					<li>
+						<div class="info_wrap">
+							<div class="info">
+								<div class="info_img">
+									<img src="../img/img-profile-01.png" alt="프로필" class="img">
+								</div>
+								<div class="info_box">
+									<div class="star_wrap">
+										<span class="star_on"></span>
+										<span class="star_on"></span>
+										<span class="star_on"></span>
+										<span class="star_on"></span>
+										<span class="star_off"></span>
+										<strong>4.0</strong>
+									</div>
+									<div class="info_cont">
+										<span class="name">닉네임</span>
+										<span class="date">25.08.06</span>
+									</div>
+								</div>
+							</div>
+							<div class="btn_wrap">
+								<button type="button">수정</button>
+								<button type="button" class="remove_btn">삭제</button>
+							</div>
+						</div>
+						<p class="cont">
+							사용자 리뷰 내역을 연동합니다. 사용자 리뷰 내역을 연동
+							합니다.사용자 리뷰 내역을 연동합니다. 사용자 리뷰 내역
+							을 연동합니다.
+						</p>
+					</li>
+					<li>
+						<div class="info_wrap">
+							<div class="info">
+								<div class="info_img">
+									<img src="../img/img-profile-01.png" alt="프로필" class="img">
+								</div>
+								<div class="info_box">
+									<div class="star_wrap">
+										<span class="star_on"></span>
+										<span class="star_on"></span>
+										<span class="star_on"></span>
+										<span class="star_on"></span>
+										<span class="star_off"></span>
+										<strong>4.0</strong>
+									</div>
+									<div class="info_cont">
+										<span class="name">닉네임</span>
+										<span class="date">25.08.06</span>
+									</div>
+								</div>
+							</div>
+							<div class="btn_wrap">
+								<button type="button">수정</button>
+								<button type="button" class="remove_btn">삭제</button>
+							</div>
+						</div>
+						<p class="cont">
+							사용자 리뷰 내역을 연동합니다. 사용자 리뷰 내역을 연동
+							합니다.사용자 리뷰 내역을 연동합니다. 사용자 리뷰 내역
+							을 연동합니다.
+						</p>
+					</li>
+					<li>
+						<div class="info_wrap">
+							<div class="info">
+								<div class="info_img">
+									<img src="../img/img-profile-01.png" alt="프로필" class="img">
+								</div>
+								<div class="info_box">
+									<div class="star_wrap">
+										<span class="star_on"></span>
+										<span class="star_on"></span>
+										<span class="star_on"></span>
+										<span class="star_on"></span>
+										<span class="star_off"></span>
+										<strong>4.0</strong>
+									</div>
+									<div class="info_cont">
+										<span class="name">닉네임</span>
+										<span class="date">25.08.06</span>
+									</div>
+								</div>
+							</div>
+							<div class="btn_wrap">
+								<button type="button">수정</button>
+								<button type="button" class="remove_btn">삭제</button>
+							</div>
+						</div>
+						<p class="cont">
+							사용자 리뷰 내역을 연동합니다. 사용자 리뷰 내역을 연동
+							합니다.사용자 리뷰 내역을 연동합니다. 사용자 리뷰 내역
+							을 연동합니다.
+						</p>
+					</li>
+				</ul>
+			</div>
+
+			<button type="button" class="details_btn">휴대폰 옵션 선택</button>
+
 		</div><!-- wrapper -->
 	</div><!-- wrap -->
 

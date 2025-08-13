@@ -270,7 +270,7 @@ header {
 	border-radius: 20px 20px 0 0;
 	background-color: #fff;
 	padding-bottom: 136px;
-	margin-top: -56px;
+	margin-top: -68px;
 	transition: all 0.3s cubic-bezier(.93, -0.18, .09, 1.2);
 	overflow: hidden;
 
@@ -598,6 +598,7 @@ nav {
 		align-items: center;
 
 		li {
+			position: relative;
 			flex: 25%;
 
 			a::before {
@@ -610,18 +611,40 @@ nav {
 
 			a {
 				flex-grow: 1;
-				height: 56px;
+				height: 68px;
 				display: flex;
 				justify-content: center;
 				align-items: center;
 				flex-direction: column;
 				text-align: center;
-				font-size: 8px;
+				font-size: 12px;
 				color: #aaaaaa;
 				cursor: pointer;
 
+				.comfirm {
+					position: absolute;
+					top: 5px;
+					left: calc(50% + 10px);
+					transform: translateX(-50%);
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					width: 20px;
+					height: 16px;
+					font-size: 8px;
+					font-weight: 500;
+					line-height: 1;
+					color: #fff;
+					border-radius: 8px;
+					background-color: #888888;
+				}
+
 				&.active {
 					color: #000000;
+
+					.comfirm {
+						background-color: #780000;
+					}
 				}
 			}
 

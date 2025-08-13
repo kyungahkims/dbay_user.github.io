@@ -97,28 +97,33 @@
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
 									<div class="product_img"><img src="../img/img_phone.png" alt="아이폰15"></div>
-									<div class="product_name">아이폰 15</div>
+									<div class="product_name">아이폰 17사주세요아이폰 17사주세요사주세요</div>
 									<span>사전예약 중</span>
+									<div class="price">1,256,000 <span>원</span></div>
+								</div>
+								<div class="swiper-slide">
+									<div class="product_img"><img src="../img/img_phone.png" alt="아이폰15"></div>
+									<div class="product_name">아이폰 17사주세요아이폰 17사주세요</div>
+									<span>사전예약 중</span>
+									<div class="price">1,256,000 <span>원</span></div>
 								</div>
 								<div class="swiper-slide">
 									<div class="product_img"><img src="../img/img_phone.png" alt="아이폰15"></div>
 									<div class="product_name">아이폰 15</div>
 									<span>사전예약 중</span>
+									<div class="price">1,256,000 <span>원</span></div>
 								</div>
 								<div class="swiper-slide">
 									<div class="product_img"><img src="../img/img_phone.png" alt="아이폰15"></div>
 									<div class="product_name">아이폰 15</div>
 									<span>사전예약 중</span>
+									<div class="price">1,256,000 <span>원</span></div>
 								</div>
 								<div class="swiper-slide">
 									<div class="product_img"><img src="../img/img_phone.png" alt="아이폰15"></div>
 									<div class="product_name">아이폰 15</div>
 									<span>사전예약 중</span>
-								</div>
-								<div class="swiper-slide">
-									<div class="product_img"><img src="../img/img_phone.png" alt="아이폰15"></div>
-									<div class="product_name">아이폰 15</div>
-									<span>사전예약 중</span>
+									<div class="price">1,256,000 <span>원</span></div>
 								</div>
 							</div>
 						</div>
@@ -313,12 +318,58 @@
 		<nav>
 			<ul>
 				<li><a href="#" class="active" aria-current="page">홈</a></li>
-				<li><a href="#">견적확인</a></li>
-				<li><a href="#">마켓</a></li>
+				<li><a href="#">진행견적<span class="comfirm">10</span></a></li>
+				<li><a href="#">완료견적<span class="comfirm">+99</span></a></li>
 				<li><a href="#">MY</a></li>
 			</ul>
 		</nav><!-- nav -->
 	</div><!-- wrap -->
+
+	<div class="modal_wrap">
+		<div class="pop">
+			<h3>기종<span>(복수선택 가능)</span></h3>
+			<div class="check_wrap">
+				<span>
+					<input type="checkbox" id="checkbox1">
+					<label for="checkbox1">애플</label>
+				</span>
+				<span>
+					<input type="checkbox" id="checkbox2">
+					<label for="checkbox2">삼성</label>
+				</span>
+				<span>
+					<input type="checkbox" id="checkbox3">
+					<label for="checkbox3">기타</label>
+				</span>
+			</div>
+			<div class="search">
+				<input type="text" placeholder="">
+				<button type="button" aria-label="검색 버튼"><img src="../img/ico-search.png" alt="검색"></button>
+			</div>
+			<div class="result_wrap">
+				<button type="button" aria-label="검색 결과 삭제 버튼">애플</button>
+				<button type="button" aria-label="검색 결과 삭제 버튼">아이폰15</button>
+				<button type="button" aria-label="검색 결과 삭제 버튼">아이폰14</button>
+			</div>
+			<hr>
+			<h3>정렬순서</h3>
+			<div class="radio_wrap radio_wrap1">
+				<span>
+					<input type="radio" id="radio1" name="sorting" checked>
+					<label for="radio1">최신순</label>
+				</span>
+				<span>
+					<input type="radio" id="radio2" name="sorting">
+					<label for="radio2">조회 많은순</label>
+				</span>
+				<span>
+					<input type="radio" id="radio3" name="sorting">
+					<label for="radio3">인기순</label>
+				</span>
+			</div>
+			<button type="button" class="sel_btn">선택완료</button>
+		</div>
+	</div><!-- modal_wrap -->
 	<script src="../js/common.js"></script>
 </body>
 

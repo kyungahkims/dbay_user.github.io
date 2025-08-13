@@ -68,9 +68,31 @@ const swiper = new Swiper('.bubble_swiper.swiper', {
 	autoHeight: true,
 });
 
+/* 상품 상세 슬라이드 */
+const swiper2 = new Swiper('.porduct_swiper.swiper', {
+	slidesPerView: 1,
+	loop: true,
+	spaceBetween: 20,
+	pagination: {
+		el: '.swiper_pagination',
+		clickable: true,
+		type: 'fraction',
+	},
+});
+
 /* tab */
 $(".tab_wrap .tab").click(function () {
 	$(".tab_wrap .tab").removeClass("active");
+	$(this).addClass("active");
+});
+
+$(".sub_tab_wrap .tab").click(function () {
+	$(".sub_tab_wrap .tab").removeClass("active");
+	$(this).addClass("active");
+});
+
+$(".color_tab_wrap .tab").click(function () {
+	$(".color_tab_wrap .tab").removeClass("active");
 	$(this).addClass("active");
 });
 
@@ -237,7 +259,7 @@ $('.info_box input[type="checkbox"]').on('change', function () {
 $('.open_btn').click(function () {
 	$(this).toggleClass('active');
 	if ($(this).hasClass('active')) {
-		$('.hidden').css('height', '100%');
+		$('.hidden').css('height', 'auto');
 		$(this).text('상품 정보 접기');
 	} else {
 		$('.hidden').css('height', '360px');
@@ -256,6 +278,15 @@ $('.wrap, .close_btn').click(function () {
 
 $('.question_wrap').click(function (e) {
 	e.stopPropagation();
+});
+
+/* 별점 클릭 */
+$(document).on('click', '.review_select_wrap .star_wrap span', function () {
+	const star = $(this).index() + 1; // 1~5점
+	$(".review_select_wrap .star_wrap span").removeClass('star_on').addClass('star_off');
+	$(".review_select_wrap .star_wrap span").slice(0, star).removeClass('star_off').addClass('star_on');
+
+	$(".select_value").addClass("active").text(`${star}점`);
 });
 
 

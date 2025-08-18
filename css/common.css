@@ -1135,6 +1135,7 @@ nav ul li:nth-child(4) a.active::before {
   border-radius: 20px;
   background-color: #fff8e1;
   padding: 3px 8px;
+  white-space: nowrap;
 }
 .radio_wrap.radio_wrap5 label span {
   display: -webkit-box;

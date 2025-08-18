@@ -395,19 +395,12 @@ header h2 {
   margin-right: 12px;
 }
 .bidding_box_wrap .box_wrap .sell_info .left .product_name {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   font-size: 14px;
   font-weight: bold;
-  margin-bottom: 2px;
-}
-.bidding_box_wrap .box_wrap .sell_info .left .product_name > div {
-  width: 100%;
+  margin: 0 5px 2px 0;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
-  margin-right: 5px;
   overflow: hidden;
 }
 .bidding_box_wrap .box_wrap .sell_info .left .star {
@@ -427,6 +420,15 @@ header h2 {
   height: 12px;
   background: url("../img/ico_star_on.png") no-repeat center/contain;
   margin-right: 4px;
+}
+.bidding_box_wrap .box_wrap .sell_info .left .num {
+  font-size: 14px;
+  color: #888;
+  margin-right: 9px;
+}
+.bidding_box_wrap .box_wrap .sell_info .left .num strong {
+  color: #000000;
+  margin-left: 4px;
 }
 .bidding_box_wrap .box_wrap .sell_info .left .recommend {
   font-size: 11px;

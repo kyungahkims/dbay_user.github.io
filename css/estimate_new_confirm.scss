@@ -412,19 +412,13 @@ header {
 				}
 
 				.product_name {
-					display: flex;
 					font-size: 14px;
 					font-weight: bold;
-					margin-bottom: 2px;
-
-					&>div {
-						width: 100%;
-						display: -webkit-box;
-						-webkit-box-orient: vertical;
-						-webkit-line-clamp: 1;
-						margin-right: 5px;
-						overflow: hidden;
-					}
+					margin: 0 5px 2px 0;
+					display: -webkit-box;
+					-webkit-box-orient: vertical;
+					-webkit-line-clamp: 1;
+					overflow: hidden;
 				}
 
 				.star {
@@ -440,6 +434,17 @@ header {
 						height: 12px;
 						background: url('../img/ico_star_on.png') no-repeat center/contain;
 						margin-right: 4px;
+					}
+				}
+
+				.num {
+					font-size: 14px;
+					color: #888;
+					margin-right: 9px;
+
+					strong {
+						color: #000000;
+						margin-left: 4px;
 					}
 				}
 

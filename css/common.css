@@ -1106,6 +1106,7 @@ nav ul li:nth-child(4) a.active::before {
   display: none;
 }
 .radio_wrap.radio_wrap4 label {
+  position: relative;
   width: 100%;
   font-size: 16px;
   text-align: center;
@@ -1120,6 +1121,20 @@ nav ul li:nth-child(4) a.active::before {
   color: #fff;
   border: 1px solid #f53b3b;
   background-color: #f53b3b;
+}
+.radio_wrap.radio_wrap4 .recommend_label {
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 10px;
+  font-weight: 500;
+  color: #f53b3b;
+  border: 1px solid #f53b3b;
+  border-radius: 20px;
+  background-color: #fff8e1;
+  padding: 3px 8px;
 }
 .radio_wrap.radio_wrap5 label span {
   display: -webkit-box;

@@ -315,16 +315,16 @@ header h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 13px;
+  font-size: 16px;
   color: #fff;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 }
 .bidding_box_wrap .box_wrap .title::before {
   content: "";
-  width: 20px;
-  height: 20px;
-  background: url("../img/ico-bid.png") no-repeat center;
-  margin-right: 4px;
+  width: 28px;
+  height: 28px;
+  background: url("../img/ico-bid.png") no-repeat center/contain;
+  margin-right: 8px;
 }
 .bidding_box_wrap .box_wrap .title strong {
   color: #fff45d;
@@ -395,7 +395,7 @@ header h2 {
   margin-right: 12px;
 }
 .bidding_box_wrap .box_wrap .sell_info .left .product_name {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: bold;
   margin: 0 5px 2px 0;
   display: -webkit-box;
@@ -412,6 +412,7 @@ header h2 {
           align-items: center;
   font-size: 14px;
   font-weight: bold;
+  line-height: 1.5;
   margin-right: 10px;
 }
 .bidding_box_wrap .box_wrap .sell_info .left .star::before {
@@ -431,11 +432,11 @@ header h2 {
   margin-left: 4px;
 }
 .bidding_box_wrap .box_wrap .sell_info .left .recommend {
-  font-size: 11px;
+  font-size: 13px;
   color: #f53b3b;
   border: 1px solid #f53b3b;
   border-radius: 20px;
-  padding: 2px 10px;
+  padding: 1px 7px;
 }
 .bidding_box_wrap .box_wrap .sell_info .left .info {
   display: -webkit-box;
@@ -448,9 +449,10 @@ header h2 {
 .bidding_box_wrap .box_wrap .sell_info .apply_btn {
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  width: 56px;
+  width: 64px;
   height: 26px;
-  font-size: 10px;
+  font-size: 13px;
+  font-weight: 500;
   color: #fff;
   border-radius: 4px;
   background-color: #f53b3b;

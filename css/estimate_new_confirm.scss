@@ -331,16 +331,16 @@ header {
 		.title {
 			display: flex;
 			align-items: center;
-			font-size: 13px;
+			font-size: 16px;
 			color: #fff;
-			margin-bottom: 20px;
+			margin-bottom: 17px;
 
 			&::before {
 				content: "";
-				width: 20px;
-				height: 20px;
-				background: url('../img/ico-bid.png') no-repeat center;
-				margin-right: 4px;
+				width: 28px;
+				height: 28px;
+				background: url('../img/ico-bid.png') no-repeat center/contain;
+				margin-right: 8px;
 			}
 
 			strong {
@@ -412,7 +412,7 @@ header {
 				}
 
 				.product_name {
-					font-size: 14px;
+					font-size: 13px;
 					font-weight: bold;
 					margin: 0 5px 2px 0;
 					display: -webkit-box;
@@ -426,6 +426,7 @@ header {
 					align-items: center;
 					font-size: 14px;
 					font-weight: bold;
+					line-height: 1.5;
 					margin-right: 10px;
 
 					&::before {
@@ -449,11 +450,11 @@ header {
 				}
 
 				.recommend {
-					font-size: 11px;
+					font-size: 13px;
 					color: #f53b3b;
 					border: 1px solid #f53b3b;
 					border-radius: 20px;
-					padding: 2px 10px;
+					padding: 1px 7px;
 				}
 
 				.info {
@@ -464,9 +465,10 @@ header {
 
 			.apply_btn {
 				flex-shrink: 0;
-				width: 56px;
+				width: 64px;
 				height: 26px;
-				font-size: 10px;
+				font-size: 13px;
+				font-weight: 500;
 				color: #fff;
 				border-radius: 4px;
 				background-color: #f53b3b;

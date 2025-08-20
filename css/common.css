@@ -1173,6 +1173,47 @@ nav ul li:nth-child(4) a.active::before {
   border: 1px solid #f53b3b;
   background-color: #f53b3b;
 }
+.radio_wrap.radio_wrap6 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 8px;
+}
+.radio_wrap.radio_wrap6 span {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.radio_wrap.radio_wrap6 input[type=radio] {
+  display: none;
+}
+.radio_wrap.radio_wrap6 label {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  text-align: center;
+  color: #999;
+  border-radius: 24px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  padding: 10px;
+  cursor: pointer;
+}
+.radio_wrap.radio_wrap6 input[type=radio]:checked + label {
+  font-weight: 500;
+  color: #f53b3b;
+  border: 1px solid #f53b3b;
+  background-color: #fff5f5;
+}
+.radio_wrap.radio_wrap6 input[type=radio]:checked + label::before {
+  content: "";
+  width: 17px;
+  height: 11px;
+  display: inline-block;
+  background: url(../img/icon-check-on.svg) no-repeat center;
+  margin-right: 6px;
+}
 
 /* star_wrap */
 .star_wrap img {

@@ -131,6 +131,7 @@ header h2 {
   background-color: #f3f3f3;
   padding: 20px 16px;
   margin-top: -29px;
+  /* ani */
   /* box_wrap */
 }
 .question_box .cs {
@@ -172,6 +173,196 @@ header h2 {
   border-radius: 10px 0 10px 10px;
   background-color: #f53b3b;
   padding: 8px;
+}
+.question_box .dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  vertical-align: middle;
+  border-radius: 50%;
+  background-color: #ff6b6b;
+  -webkit-animation: mercuryTypingAnimation 1.5s infinite ease-in-out;
+          animation: mercuryTypingAnimation 1.5s infinite ease-in-out;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  margin-right: 4px;
+}
+.question_box .dot:nth-child(1) {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+.question_box .dot:nth-child(2) {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+.question_box .dot:nth-child(3) {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+.question_box .dot:last-child {
+  margin-right: 0;
+}
+.question_box .user.chat {
+  display: none;
+}
+.question_box .cs.bounce_ani,
+.question_box .user.bounce_ani {
+  -webkit-animation: bounceActive 0.5s ease-out;
+          animation: bounceActive 0.5s ease-out;
+}
+.question_box .cs.fade_ani,
+.question_box .user.fade_ani {
+  opacity: 0;
+  -webkit-animation: fadeIn 0.5s ease-in-out forwards;
+          animation: fadeIn 0.5s ease-in-out forwards;
+}
+.question_box .cs.slide_ani,
+.question_box .user.slide_ani {
+  opacity: 0;
+  -webkit-animation: slideInRight 0.5s ease-in-out forwards;
+          animation: slideInRight 0.5s ease-in-out forwards;
+}
+.question_box .user.chat_ani {
+  display: block;
+  opacity: 0;
+  -webkit-animation: fadeIn 0.5s ease-in-out forwards;
+          animation: fadeIn 0.5s ease-in-out forwards;
+}
+@-webkit-keyframes bounceActive {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  50% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  75% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes bounceActive {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  50% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  75% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@-webkit-keyframes slideInRight {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    opacity: 0;
+  }
+  80% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInRight {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    opacity: 0;
+  }
+  80% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes mercuryTypingAnimation {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    background-color: #f53b3b;
+  }
+  28% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+    background-color: #ff6b6b;
+  }
+  44% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    background-color: #ff9b9b;
+  }
+}
+@keyframes mercuryTypingAnimation {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    background-color: #f53b3b;
+  }
+  28% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+    background-color: #ff6b6b;
+  }
+  44% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    background-color: #ff9b9b;
+  }
 }
 .question_box .box_wrap {
   display: -webkit-box;

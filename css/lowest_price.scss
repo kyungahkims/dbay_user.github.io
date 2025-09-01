@@ -1,28 +1,6 @@
-.wrap {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	background-color: #f3f3f3;
-}
-
-header {
-	background-color: #fff;
-
-	h2 {
-		font-size: 18px;
-		font-weight: 500;
-		margin-left: 14px;
-	}
-}
-
-.wrapper {
-	background-color: #fff;
-	overflow-y: scroll;
-	flex: 1;
-}
-
 /* bg */
 .bg {
+	background-color: #fff;
 
 	.bubble {
 		max-width: 200px;
@@ -116,7 +94,6 @@ header {
 /* question_box */
 .question_box {
 	position: relative;
-	min-height: 100%;
 	border-radius: 20px 20px 0 0;
 	background-color: #f3f3f3;
 	padding: 20px 16px;

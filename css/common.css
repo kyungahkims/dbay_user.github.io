@@ -128,18 +128,17 @@ textarea {
 }
 
 /* 스크롤 no */
-body {
-  -ms-overflow-style: none;
+/* body {
+	-ms-overflow-style: none;
 }
 
 ::-webkit-scrollbar:vertical {
-  display: none;
+	display: none;
 }
 
 ::-webkit-scrollbar:horizontal {
-  display: none;
-}
-
+	display: none;
+} */
 body {
   height: calc(var(--vh, 1vh) * 100);
   font-family: var(--font-family);
@@ -150,13 +149,23 @@ body {
 /***********************/
 /* wrap */
 .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: relative;
-  max-width: 460px;
+  max-width: 600px;
   min-width: 280px;
   width: 100%;
   height: 100%;
   margin: auto;
-  background-color: #f4f4f4;
+  background-color: #f3f3f3;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -169,7 +178,6 @@ body {
 /* header */
 header {
   width: 100%;
-  max-width: 460px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -179,11 +187,37 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #f4f4f4;
-  padding: 40px 16px 16px 16px;
-}
-header.active {
   background-color: #fff;
+  padding: 40px 16px 16px;
+}
+header h2 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 16px;
+}
+header .inquiry_link {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: -0.24px;
+  line-height: 1.33;
+  color: #ee3e3e;
+  border-radius: 20px;
+  border: 1px solid #ee3e3e;
+  padding: 5px 10px;
+  margin-right: 19px;
+}
+header .notification_btn {
+  position: relative;
+}
+header .notification_btn.active::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  right: 0px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #f53b3b;
 }
 header button {
   background-color: transparent;
@@ -198,6 +232,14 @@ header .btn_wrap {
   -webkit-column-gap: 14px;
      -moz-column-gap: 14px;
           column-gap: 14px;
+}
+
+/* wrapper */
+.wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow-y: auto;
 }
 
 /* bg */
@@ -332,23 +374,12 @@ header .btn_wrap {
 
 /* wing */
 .wing {
-  position: absolute;
-  z-index: 998;
+  position: relative;
   width: 100%;
-  height: 100%;
   border-radius: 20px 20px 0 0;
   background-color: #fff;
-  padding-bottom: 136px;
   margin-top: -68px;
-  -webkit-transition: all 0.3s cubic-bezier(0.93, -0.18, 0.09, 1.2);
-  transition: all 0.3s cubic-bezier(0.93, -0.18, 0.09, 1.2);
   overflow: hidden;
-}
-.wing.active {
-  max-height: 100vh;
-  margin-top: -217px;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
 }
 .wing article {
   padding: 0 0 40px 16px;
@@ -387,7 +418,7 @@ header .btn_wrap {
   width: 100%;
   font-size: 14px;
   border-radius: 23px;
-  background-color: #f4f4f4;
+  background-color: #f3f3f3;
   padding: 10px 32px 10px 12px;
 }
 .wing .search input::-webkit-input-placeholder {
@@ -561,7 +592,7 @@ header .btn_wrap {
   width: 92px;
   height: 92px;
   border-radius: 8px;
-  background-color: #f4f4f4;
+  background-color: #f3f3f3;
   margin-right: 12px;
 }
 .list_wrap .box .product_img img {
@@ -674,14 +705,8 @@ header .btn_wrap {
 
 /* nav */
 nav {
-  position: fixed;
-  bottom: 0;
-  z-index: 999;
-  max-width: 460px;
   width: 100%;
   background-color: #fff;
-}
-nav.active {
   -webkit-box-shadow: inset 3px 12px 15px -10px rgba(0, 0, 0, 0.08);
           box-shadow: inset 3px 12px 15px -10px rgba(0, 0, 0, 0.08);
 }
@@ -807,7 +832,7 @@ nav ul li:nth-child(4) a.active::before {
   position: absolute;
   bottom: 0;
   width: 100%;
-  max-width: 460px;
+  max-width: 600px;
   color: #202020;
   background-color: #fff;
   border-radius: 20px 20px 0 0;
@@ -875,7 +900,7 @@ nav ul li:nth-child(4) a.active::before {
   padding: 0 12px;
 }
 .modal_wrap .pop .result_wrap button:nth-child(1) {
-  background-color: #f4f4f4;
+  background-color: #f3f3f3;
 }
 .modal_wrap .pop .result_wrap button::after {
   content: "";
@@ -889,7 +914,7 @@ nav ul li:nth-child(4) a.active::before {
   width: 100%;
   height: 1px;
   border: 0;
-  background-color: #f4f4f4;
+  background-color: #f3f3f3;
   margin: 28px 0;
 }
 

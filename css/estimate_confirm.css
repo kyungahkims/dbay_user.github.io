@@ -1,11 +1,6 @@
 @charset "UTF-8";
-header {
-  background-color: #fff;
-}
-header h2 {
-  font-size: 18px;
-  font-weight: 500;
-  margin-left: 16px;
+.wrapper {
+  padding-top: 20px;
 }
 
 .question_wrap2 .question {
@@ -38,13 +33,6 @@ header h2 {
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
   z-index: 1;
-}
-
-.wrapper {
-  height: 100%;
-  background-color: #f3f3f3;
-  overflow-y: auto;
-  padding: 20px 0 180px;
 }
 
 .slide {
@@ -104,6 +92,7 @@ header h2 {
 .slide .slide_box .img_box {
   width: 46px;
   height: 46px;
+  background-color: #fff;
 }
 .slide .slide_box strong {
   display: block;

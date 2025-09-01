@@ -1,15 +1,5 @@
-.wrap {
+.wrapper {
 	background-color: #fff;
-}
-
-header {
-	background-color: #fff;
-
-	h2 {
-		font-size: 18px;
-		font-weight: 500;
-		margin-left: 14px;
-	}
 }
 
 /* bg */
@@ -43,7 +33,6 @@ header {
 }
 
 .wing {
-	padding-bottom: 75px;
 
 	.list_wrap2 {
 		padding-left: 0;
@@ -204,7 +193,7 @@ header {
 
 	.details_btn {
 		position: fixed;
-		max-width: 460px;
+		max-width: 600px;
 		margin: auto;
 		bottom: 0;
 		width: 100%;

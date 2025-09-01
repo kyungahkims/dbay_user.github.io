@@ -1,11 +1,5 @@
-header {
-	background-color: #fff;
-
-	h2 {
-		font-size: 18px;
-		font-weight: 500;
-		margin-left: 16px;
-	}
+.wrapper {
+	padding-top: 20px;
 }
 
 .question_wrap2 {
@@ -45,13 +39,6 @@ header {
 	}
 }
 
-.wrapper {
-	height: 100%;
-	background-color: #f3f3f3;
-	overflow-y: auto;
-	padding: 20px 0 180px;
-}
-
 .slide {
 	display: flex;
 	gap: 10px;
@@ -85,10 +72,10 @@ header {
 		.imminentk {
 			position: absolute;
 			top: -12px;
-    		left: 75%;
+			left: 75%;
 			transform: translateX(-50%);
 			width: 56px;
-    		height: 35px;
+			height: 35px;
 			background: url('../img/icon_ribbon_01.svg') no-repeat center;
 			z-index: 2;
 		}
@@ -96,6 +83,7 @@ header {
 		.img_box {
 			width: 46px;
 			height: 46px;
+			background-color: #fff;
 		}
 
 		strong {

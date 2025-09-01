@@ -1,28 +1,13 @@
-.wrap {
-  background-color: #fff;
-}
-
-header {
-  background-color: #fff;
-}
-header h2 {
-  font-size: 18px;
-  font-weight: 500;
-  margin-left: 16px;
-}
-
 .wrapper {
-  height: 100%;
   background-color: #fff;
-  overflow-y: auto;
-  padding: 0 0 130px;
+  padding-bottom: 50px;
 }
 
 hr {
   width: 100%;
   height: 10px;
   border: 0;
-  background-color: #f4f4f4;
+  background-color: #f3f3f3;
 }
 
 .title {
@@ -70,20 +55,20 @@ hr {
           column-gap: 8px;
   z-index: 999;
 }
-.porduct_swiper .color_tab_wrap button {
+.porduct_swiper .color_tab_wrap div {
   width: 16px;
   height: 16px;
   background-color: transparent;
 }
-.porduct_swiper .color_tab_wrap button.active {
+.porduct_swiper .color_tab_wrap div.active {
   width: 22px;
   height: 22px;
 }
-.porduct_swiper .color_tab_wrap button.active .color {
+.porduct_swiper .color_tab_wrap div.active .color {
   position: relative;
   top: 2px;
 }
-.porduct_swiper .color_tab_wrap button.active .color::after {
+.porduct_swiper .color_tab_wrap div.active .color::after {
   content: "";
   position: absolute;
   top: -4px;
@@ -95,7 +80,7 @@ hr {
   border: 1px solid #666;
   z-index: -1;
 }
-.porduct_swiper .color_tab_wrap button .color {
+.porduct_swiper .color_tab_wrap div .color {
   display: inline-block;
   width: 16px;
   height: 16px;
@@ -103,19 +88,19 @@ hr {
   background-color: #d9f3ff;
   border: 1px solid #666;
 }
-.porduct_swiper .color_tab_wrap button .color.gray {
+.porduct_swiper .color_tab_wrap div .color.gray {
   background-color: #f1f1f1;
 }
-.porduct_swiper .color_tab_wrap button .color.sky {
+.porduct_swiper .color_tab_wrap div .color.sky {
   background-color: #d9f3ff;
 }
-.porduct_swiper .color_tab_wrap button .color.pink {
+.porduct_swiper .color_tab_wrap div .color.pink {
   background-color: #ffe2e2;
 }
-.porduct_swiper .color_tab_wrap button .color.yellow {
+.porduct_swiper .color_tab_wrap div .color.yellow {
   background-color: #feffde;
 }
-.porduct_swiper .color_tab_wrap button .color.black {
+.porduct_swiper .color_tab_wrap div .color.black {
   background-color: #535353;
 }
 .porduct_swiper .swiper_pagination {
@@ -263,7 +248,7 @@ hr {
   -webkit-column-gap: 38px;
      -moz-column-gap: 38px;
           column-gap: 38px;
-  border-bottom: 1px solid #f4f4f4;
+  border-bottom: 1px solid #f3f3f3;
   padding: 0 17px;
 }
 .tab_wrap button {
@@ -505,7 +490,7 @@ hr {
   padding: 20px 0 17px;
 }
 .review_list_wrap .review_list > li:not(:last-child) {
-  border-bottom: 1px solid #f4f4f4;
+  border-bottom: 1px solid #f3f3f3;
 }
 .review_list_wrap .review_list > li .info_wrap {
   display: -webkit-box;
@@ -597,7 +582,7 @@ hr {
 
 .details_btn {
   position: fixed;
-  max-width: 460px;
+  max-width: 600px;
   margin: auto;
   bottom: 0;
   width: 100%;

@@ -1,0 +1,152 @@
+.wrapper {
+  padding: 20px 16px;
+}
+.wrapper.wrapper2 {
+  padding: 0;
+  background-color: #fff;
+}
+
+.btn_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
+}
+.btn_wrap button {
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+.btn_wrap button.red {
+  color: #fff;
+  background-color: #f53b3b;
+}
+
+.info {
+  text-align: center;
+  color: #777;
+}
+.info::before {
+  content: "";
+  display: block;
+  width: 97px;
+  height: 89px;
+  background: url("../img/icon-alarm.svg") no-repeat center;
+  margin: 59px auto 19px;
+}
+.info h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.info p {
+  font-size: 14px;
+  margin-top: 7px;
+}
+
+.notification_list li {
+  position: relative;
+  font-size: 12px;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 27px 20px 22px;
+  margin-top: 20px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.notification_list li.completed {
+  position: relative;
+}
+.notification_list li.completed::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #d4d4d4;
+  opacity: 0.6;
+}
+.notification_list li .view {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  line-height: 0.85;
+  color: #888;
+  border-bottom: 1px solid #888;
+}
+.notification_list li .label {
+  color: #f53b3b;
+  border-radius: 5px;
+  background-color: #fee;
+  padding: 4px 11px;
+}
+.notification_list li .time {
+  color: #aaa;
+}
+.notification_list li .time::before {
+  content: "";
+  position: relative;
+  display: inline-block;
+  top: -3px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background-color: #aaa;
+  margin: 0 5px 0 8px;
+}
+.notification_list li h5 {
+  font-size: 16px;
+  margin: 13px 0 7px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.notification_list li p {
+  line-height: 1.83;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.notification_view .notification_title {
+  position: fixed;
+  width: 100%;
+  max-width: 600px;
+  font-size: 12px;
+  border-top: 1px solid #f3f3f3;
+  border-bottom: 1px solid #f3f3f3;
+  background-color: #fff;
+  padding: 20px 16px 13px;
+}
+.notification_view .notification_title .label {
+  color: #f53b3b;
+  border-radius: 5px;
+  background-color: #fee;
+  padding: 4px 11px;
+}
+.notification_view .notification_title .time {
+  color: #aaa;
+}
+.notification_view .notification_title .time::before {
+  content: "";
+  position: relative;
+  display: inline-block;
+  top: -3px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background-color: #aaa;
+  margin: 0 5px 0 8px;
+}
+.notification_view .notification_title h5 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+.notification_view .notification_cont {
+  font-size: 14px;
+  line-height: 1.71;
+  padding: 16px 20px;
+}/*# sourceMappingURL=notification_view.css.map */

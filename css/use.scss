@@ -1,21 +1,9 @@
 header {
-	background-color: #fff;
-	border-bottom: 1px solid #f4f4f4;
-
-	h2 {
-		font-size: 18px;
-		font-weight: 500;
-		margin-left: 16px;
-	}
+	border-bottom: 1px solid #f3f3f3;
 }
 
 .wrapper {
-	display: flex;
-	flex-direction: column;
-	height: 100%;
 	background-color: #fff;
-	overflow-y: auto;
-	padding-bottom: 135px;
 
 	&.wrapper2 {
 		padding-left: 17px;
@@ -59,7 +47,7 @@ input[type=checkbox] {
 	justify-content: space-between;
 	align-items: center;
 	border-radius: 8px;
-	background-color: #f4f4f4;
+	background-color: #f3f3f3;
 
 	&>div {
 		flex: 1;
@@ -110,7 +98,7 @@ input[type=checkbox] {
 	position: relative;
 	top: -4px;
 	border-radius: 0 0 8px 8px;
-	background-color: #f4f4f4;
+	background-color: #f3f3f3;
 
 	ul {
 		border-top: 1px solid #dedede;

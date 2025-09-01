@@ -91,11 +91,6 @@ $(".sub_tab_wrap .tab").click(function () {
 	$(this).addClass("active");
 });
 
-$(".color_tab_wrap .tab").click(function () {
-	$(".color_tab_wrap .tab").removeClass("active");
-	$(this).addClass("active");
-});
-
 /* nav bar*/
 $('nav li').click(function () {
 	$('nav li a').removeClass('active');
@@ -133,55 +128,6 @@ $('.like').click(function () {
 		$(this).attr('aria-label', '찜하기 완료, 찜하게 해제');
 	}
 });
-
-/* 터치 이벤트 */
-let touchStartY = 0;
-let touchEndY = 0;
-let touchStartX = 0;
-let touchEndX = 0;
-
-function onTouchStart(e) {
-	touchStartY = e.touches ? e.touches[0].clientY : e.clientY;
-	touchStartX = e.touches ? e.touches[0].clientX : e.clientX;
-}
-
-function onTouchEnd(e) {
-	touchEndY = e.changedTouches ? e.changedTouches[0].clientY : e.clientY;
-	touchEndX = e.changedTouches ? e.changedTouches[0].clientX : e.clientX;
-
-	if (Math.abs(touchStartY - touchEndY) > Math.abs(touchStartX - touchEndX)) {
-		handleSwipe();
-	}
-}
-
-function handleSwipe() {
-	if (touchStartY > touchEndY + 10) {
-		$('.wrap, header, .wing, nav').addClass('active');
-	} else if (touchStartY < touchEndY - 10) {
-		if ($('.wing').scrollTop() === 0) {
-			$('.wrap, header, .wing, nav').removeClass('active');
-		}
-	}
-}
-
-/* 모바일 터치 이벤트 */
-$('.wing').on('touchstart', onTouchStart);
-$('.wing').on('touchend', onTouchEnd);
-
-/* scroll 이벤트 */
-function onScroll() {
-	const floatimgTop = $('.wing').scrollTop();
-
-	if ($(this).scrollTop() === 0) {
-		$('.wrap, header, .wing, nav').removeClass('active');
-	} else if (floatimgTop > 180) {
-		$('.floatimg_btn').addClass('active');
-	} else {
-		$('.floatimg_btn').removeClass('active');
-	}
-}
-
-$('.wing').scroll(onScroll).trigger('scroll');
 
 /* resize */
 $(document).ready(function () {
@@ -288,7 +234,6 @@ $(document).on('click', '.review_select_wrap .star_wrap span', function () {
 
 	$(".select_value").addClass("active").text(`${star}점`);
 });
-
 
 /* 알림 상세 타이틀 높이 값 */
 function onResize() {

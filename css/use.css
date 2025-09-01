@@ -1,25 +1,9 @@
 header {
-  background-color: #fff;
-  border-bottom: 1px solid #f4f4f4;
-}
-header h2 {
-  font-size: 18px;
-  font-weight: 500;
-  margin-left: 16px;
+  border-bottom: 1px solid #f3f3f3;
 }
 
 .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100%;
   background-color: #fff;
-  overflow-y: auto;
-  padding-bottom: 135px;
 }
 .wrapper.wrapper2 {
   padding-left: 17px;
@@ -66,7 +50,7 @@ input[type=checkbox] {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 8px;
-  background-color: #f4f4f4;
+  background-color: #f3f3f3;
   /* checkbox */
 }
 .agree_wrap > div {
@@ -114,7 +98,7 @@ input[type=checkbox] {
   position: relative;
   top: -4px;
   border-radius: 0 0 8px 8px;
-  background-color: #f4f4f4;
+  background-color: #f3f3f3;
   /* checkbox */
 }
 .info_box ul {

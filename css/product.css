@@ -1,14 +1,5 @@
-.wrap {
+.wrapper {
   background-color: #fff;
-}
-
-header {
-  background-color: #fff;
-}
-header h2 {
-  font-size: 18px;
-  font-weight: 500;
-  margin-left: 14px;
 }
 
 /* bg */
@@ -36,7 +27,6 @@ header h2 {
 }
 
 .wing {
-  padding-bottom: 75px;
   /* product_select */
   /* product_details */
 }
@@ -191,7 +181,7 @@ header h2 {
 }
 .wing .details_btn {
   position: fixed;
-  max-width: 460px;
+  max-width: 600px;
   margin: auto;
   bottom: 0;
   width: 100%;

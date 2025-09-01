@@ -1,17 +1,5 @@
-header {
-  background-color: #fff;
-}
-header h2 {
-  font-size: 18px;
-  font-weight: 500;
-  margin-left: 16px;
-}
-
 .wrapper {
-  height: 100%;
-  background-color: #f7f7f7;
-  overflow-y: auto;
-  padding: 20px 16px 160px;
+  padding: 20px 16px;
 }
 
 .link_limit {
@@ -123,7 +111,7 @@ header h2 {
   width: 80px;
   height: 80px;
   border-radius: 8px;
-  background-color: #f4f4f4;
+  background-color: #f3f3f3;
   margin-right: 8px;
 }
 .estimate_box1 .box_body .product_wrap .product_img img {
@@ -332,7 +320,7 @@ header h2 {
 }
 .estimate_box2 .box_body .box_form1 {
   padding: 22px 0 11px;
-  border-bottom: 1px solid #f4f4f4;
+  border-bottom: 1px solid #f3f3f3;
 }
 .estimate_box2 .box_body .box_form1 .big {
   font-size: 16px;
@@ -356,7 +344,7 @@ header h2 {
 }
 .estimate_box2 .box_body .box_form2 {
   padding: 13px 0 12px;
-  border-bottom: 1px solid #f4f4f4;
+  border-bottom: 1px solid #f3f3f3;
 }
 .estimate_box2 .box_body .box_form2 li:not(:last-child) {
   margin-bottom: 12px;
@@ -440,7 +428,7 @@ header h2 {
 }
 .estimate_box2 .box_body .box_form5 {
   padding-top: 18px;
-  border-top: 1px solid #f4f4f4;
+  border-top: 1px solid #f3f3f3;
 }
 .estimate_box2 .box_body .box_form5 li {
   font-size: 16px;
@@ -485,7 +473,7 @@ header h2 {
   border-radius: 20px;
   background-color: #000;
   margin-bottom: 20px;
-  border-bottom: 1px solid #f4f4f4;
+  border-bottom: 1px solid #f3f3f3;
 }
 .estimate_box2 .box_body .cont {
   font-size: 12px;

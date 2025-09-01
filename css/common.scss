@@ -103,7 +103,7 @@ textarea {
 }
 
 /* 스크롤 no */
-body {
+/* body {
 	-ms-overflow-style: none;
 }
 
@@ -113,7 +113,7 @@ body {
 
 ::-webkit-scrollbar:horizontal {
 	display: none;
-}
+} */
 
 body {
 	height: calc(var(--vh, 1vh) * 100);
@@ -126,13 +126,16 @@ body {
 
 /* wrap */
 .wrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	position: relative;
-	max-width: 460px;
+	max-width: 600px;
 	min-width: 280px;
 	width: 100%;
 	height: 100%;
 	margin: auto;
-	background-color: #f4f4f4;
+	background-color: #f3f3f3;
 	user-select: none;
 
 	&.active {
@@ -143,15 +146,45 @@ body {
 /* header */
 header {
 	width: 100%;
-	max-width: 460px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color: #f4f4f4;
-	padding: 40px 16px 16px 16px;
+	background-color: #fff;
+	padding: 40px 16px 16px;
 
-	&.active {
-		background-color: #fff;
+	h2 {
+		font-size: 18px;
+		font-weight: 500;
+		margin-left: 16px;
+	}
+
+	.inquiry_link {
+		font-size: 12px;
+		font-weight: 500;
+		letter-spacing: -0.24px;
+		line-height: 1.33;
+		color: #ee3e3e;
+		border-radius: 20px;
+		border: 1px solid #ee3e3e;
+		padding: 5px 10px;
+		margin-right: 19px;
+	}
+
+	.notification_btn {
+		position: relative;
+
+		&.active {
+			&::after {
+				content: "";
+				position: absolute;
+				top: -2px;
+				right: 0px;
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				background-color: #f53b3b;
+			}
+		}
 	}
 
 	button {
@@ -163,6 +196,12 @@ header {
 		align-items: center;
 		column-gap: 14px;
 	}
+}
+
+/* wrapper */
+.wrapper {
+	flex: 1;
+	overflow-y: auto;
 }
 
 /* bg */
@@ -269,23 +308,12 @@ header {
 
 /* wing */
 .wing {
-	position: absolute;
-	z-index: 998;
+	position: relative;
 	width: 100%;
-	height: 100%;
 	border-radius: 20px 20px 0 0;
 	background-color: #fff;
-	padding-bottom: 136px;
 	margin-top: -68px;
-	transition: all 0.3s cubic-bezier(.93, -0.18, .09, 1.2);
 	overflow: hidden;
-
-	&.active {
-		max-height: calc(100vh);
-		margin-top: -217px;
-		overflow-y: scroll;
-		-webkit-overflow-scrolling: touch;
-	}
 
 	article {
 		padding: 0 0 40px 16px;
@@ -326,7 +354,7 @@ header {
 			width: 100%;
 			font-size: 14px;
 			border-radius: 23px;
-			background-color: #f4f4f4;
+			background-color: #f3f3f3;
 			padding: 10px 32px 10px 12px;
 
 			&::placeholder {
@@ -476,7 +504,7 @@ header {
 			width: 92px;
 			height: 92px;
 			border-radius: 8px;
-			background-color: #f4f4f4;
+			background-color: #f3f3f3;
 			margin-right: 12px;
 
 			img {
@@ -587,16 +615,9 @@ header {
 
 /* nav */
 nav {
-	position: fixed;
-	bottom: 0;
-	z-index: 999;
-	max-width: 460px;
 	width: 100%;
 	background-color: #fff;
-
-	&.active {
-		box-shadow: inset 3px 12px 15px -10px rgba(0, 0, 0, 0.08);
-	}
+	box-shadow: inset 3px 12px 15px -10px rgba(0, 0, 0, 0.08);
 
 	ul {
 		display: flex;
@@ -706,7 +727,7 @@ nav {
 		position: absolute;
 		bottom: 0;
 		width: 100%;
-		max-width: 460px;
+		max-width: 600px;
 		color: #202020;
 		background-color: #fff;
 		border-radius: 20px 20px 0 0;
@@ -765,7 +786,7 @@ nav {
 				padding: 0 12px;
 
 				&:nth-child(1) {
-					background-color: #f4f4f4;
+					background-color: #f3f3f3;
 				}
 
 				&::after {
@@ -783,7 +804,7 @@ nav {
 			width: 100%;
 			height: 1px;
 			border: 0;
-			background-color: #f4f4f4;
+			background-color: #f3f3f3;
 			margin: 28px 0;
 		}
 	}

@@ -6,14 +6,14 @@ header h2 {
 
 	.question {
 		top: 35px;
-		left: -110px;
+		left: -100px;
 		padding: 21px 18px;
 
 		&::before {
 			content: "";
 			position: absolute;
 			top: -16px;
-			left: 115px;
+			left: 105px;
 			width: 0;
 			height: 0;
 			border-top: 8px solid transparent;
@@ -27,7 +27,7 @@ header h2 {
 			content: "";
 			position: absolute;
 			top: -14px;
-			left: 116px;
+			left: 106px;
 			width: 0;
 			height: 0;
 			border-top: 7px solid transparent;

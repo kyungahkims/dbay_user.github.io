@@ -28,11 +28,14 @@
 		<div class="wrapper">
 			<div class="list_wrap list_wrap3">
 				<div class="sell_info2">
-					<div class="product_img"><img src="../img/img-profile-06.png" alt="구매자 프로필" class="img"></div>
-					<div>
-						<div class="product_name">휴대폰 성지</div>
-						<span class="num">휴대폰 개통 234건</span>
+					<div class="flex-c">
+						<div class="product_img"><img src="../img/img-profile-06.png" alt="구매자 프로필" class="img"></div>
+						<div>
+							<div class="product_name">휴대폰 성지</div>
+							<span class="num">휴대폰 개통 234건</span>
+						</div>
 					</div>
+					<button type="button" class="completed_btn">계약완료</button>
 				</div>
 				<h3 class="list_title">견적 요청 사항</h3>
 				<div class="box box4">
@@ -130,7 +133,20 @@
 					<h5>안내사항</h5>
 					<p>추가문의는 채팅상담 부탁드립니다.</p>
 				</div>
-				<button type="button" class="sel_btn" onclick="window.location.href='#'">견적 선정하기</button>
+				<button type="button" class="sel_btn">상담하기</button>
+				<div class="btn_wrap">
+					<button type="button" class="call_btn">상담하기</button>
+					<button type="button">계약요청</button>
+					<button type="button" class="review_btn">리뷰하기</button>
+					<button type="button" class="sos_btn">신고</button>
+				</div>
+
+				<div class="btn_wrap">
+					<button type="button" class="call_btn">상담하기</button>
+					<button type="button" disabled>계약요청중</button>
+					<button type="button" class="review_btn">리뷰하기</button>
+					<button type="button" class="sos_btn">신고</button>
+				</div>
 			</div>
 		</div><!-- wrapper -->
 		<nav>

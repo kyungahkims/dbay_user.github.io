@@ -19,7 +19,7 @@
 	<div class="wrap">
 		<header>
 			<div class="flex-c">
-				<h2>진행 중인 견적</h2>
+				<h2>완료된 견적</h2>
 				<div class="question_wrap question_wrap2">
 					<button type="button" aria-label="상세 설명 보기" class="question_btn"></button>
 					<div class="question">
@@ -40,6 +40,10 @@
 			</div>
 		</header><!-- header -->
 		<div class="wrapper">
+			<div class="tab_wrap">
+				<button type="button" class="tab"><span>계약완료</span></button>
+				<button type="button" class="tab active"><span>미계약</span></button>
+			</div>
 			<div class="slide">
 				<div class="slide_box on">
 					<span class="imminentk">마감임박</span>
@@ -168,7 +172,7 @@
 								</div>
 							</div>
 							<div>
-								<button type="button" class="apply_btn">상담하기</button>
+								<button type="button" class="completed_btn" disabled>미계약</button>
 							</div>
 						</div>
 						<ul class="product_details">
@@ -229,8 +233,7 @@
 								</div>
 							</div>
 							<div>
-								<button type="button" class="reques_btn">계약요청</button>
-								<button type="button" class="apply_btn">상담하기</button>
+								<button type="button" class="completed_btn">계약완료</button>
 							</div>
 						</div>
 						<ul class="product_details">
@@ -275,8 +278,7 @@
 								</div>
 							</div>
 							<div>
-								<button type="button" class="reques_btn" disabled>계약요청중</button>
-								<button type="button" class="apply_btn">상담하기</button>
+								<button type="button" class="apply_btn" disabled>상담하기</button>
 							</div>
 						</div>
 						<ul class="product_details product_details2">
@@ -316,14 +318,14 @@
 		<nav>
 			<ul>
 				<li><a href="#">홈</a></li>
-				<li><a href="#" class="active" aria-current="page">진행견적<span class="comfirm">10</span></a></li>
-				<li><a href="#">완료견적<span class="comfirm">+99</span></a></li>
+				<li><a href="#">진행견적<span class="comfirm">10</span></a></li>
+				<li><a href="#" class="active" aria-current="page">완료견적<span class="comfirm">+99</span></a></li>
 				<li><a href="#">MY</a></li>
 			</ul>
 		</nav><!-- nav -->
 	</div><!-- wrap -->
 
-	<!-- <div class="modal_wrap" style="display: flex;">
+	<div class="modal_wrap" style="display: flex;">
 		<div class="modal">
 			<div class="modal_head">
 				<h3>제휴 카드사 결합 혜택</h3>
@@ -387,47 +389,7 @@
 				<button type="button" class="modal_close_btn">닫기</button>
 			</div>
 		</div>
-	</div> -->
-
-	<div class="modal_wrap" style="display: flex;">
-		<div class="modal1">
-			<div class="modal_body">
-				<p>이미 계약요청중인 견적이 있을 경우
-					상담만 가능합니다.
-				</p>
-				<p class="red">딜러와 상담을 진행하시겠습니까?</p>
-			</div>
-			<div class="btn_wrap"><button type="button">다음에 할래요</button><button type="button" class="red">진행할게요</button></div>
-		</div>
 	</div>
-
-	<!-- <div class="modal_wrap" style="display: flex;">
-		<div class="modal3">
-			<div class="modal_body">
-				<h3>[디베이상점디베이상점]</h3>
-				<p>딜러와 계약이 완료되면<br>
-					요청 건은 자동으로 마감되며,<br>
-					다른 딜러와는 상담 및 계약을<br>
-					계속해서 진행할 수 없습니다.
-				</p>
-				<p class="red">계약요청을 진행하겠습니까?</p>
-			</div>
-			<div class="btn_wrap"><button type="button">다음에 할래요</button><button type="button" class="red">진행할게요</button></div>
-		</div>
-	</div> -->
-
-	<!-- <div class="modal_wrap" style="display: flex;">
-		<div class="modal2">
-			<div class="modal_body">
-				<p>이미 진행중인 계약요청 건이 있습니다.
-					진행중인 계약요청건을 딜러가 취소하면
-					다시 계약요청을 시도할 수 있습니다.
-				</p>
-			</div>
-			<div class="btn_wrap"><button type="button" class="red">확인</button></div>
-		</div>
-	</div> -->
-
 	<script src="../js/common.js"></script>
 </body>
 

@@ -189,6 +189,8 @@ hr {
 	}
 
 	.max_price {
+		display: flex;
+		align-items: center;
 		font-size: 16px;
 		font-weight: 500;
 		color: #f53b3b;
@@ -196,7 +198,13 @@ hr {
 
 		strong {
 			font-size: 22px;
+			margin-left: 5px;
 		}
+	}
+
+	.question_wrap .question {
+		left: -180px;
+		width: 262px;
 	}
 
 	.mix_price {
@@ -208,20 +216,45 @@ hr {
 		color: #707070;
 		border-radius: 10px;
 		border: 1px solid #d9d9d9;
-		padding: 14px 20px;
+		padding: 12px 20px 7px;
 
-		span {
-			display: inline-flex;
-			align-items: center;
-			font-size: 16px;
+		.right {
+			text-align: right;
+		}
+
+		.title {
+			font-size: 14px;
+			font-weight: bold;
+			color: #3b6df5;
+		}
+
+		.sub_title {
+			font-size: 10px;
+			color: #707070;
+		}
+
+		.before_price {
+			position: relative;
 			font-weight: 500;
+			color: #aaa;
+
+			&::before {
+				content: "";
+				position: absolute;
+				top: 9px;
+				width: 90%;
+				height: 1px;
+				background-color: #333;
+			}
+		}
+
+		.dc_price {
+			font-size: 14px;
 			color: #3b6df5;
 
 			strong {
-				position: relative;
-				top: -3px;
-				font-size: 22px;
-				margin-left: 5px;
+				font-size: 20px;
+				margin-right: 1px;
 			}
 		}
 	}

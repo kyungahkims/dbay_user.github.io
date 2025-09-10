@@ -5,7 +5,7 @@ $('.swiper-group').each(function (t) {
 	const slideCount = $(this).find('.swiper-slide').length;
 	const swiper = new Swiper('.swiper.type' + t, {
 		slidesPerView: 'auto',
-		spaceBetween: (t === 0) ? 8 : 18,
+		spaceBetween: (t === 0) ? 10 : 18,
 		observer: true,
 		observeParents: true,
 		loop: false,
@@ -78,6 +78,20 @@ const swiper2 = new Swiper('.porduct_swiper.swiper', {
 		clickable: true,
 		type: 'fraction',
 	},
+});
+
+/* 홈 상품 슬라이드 */
+const swiper3 = new Swiper('.porduct_list_swiper.swiper', {
+	slidesPerView: 'auto',
+	spaceBetween: 10,
+	observer: true,
+	observeParents: true,
+	loop: false,
+	initialSlide: 0,
+	/* centeredSlides: slideCount === 1,
+	centeredSlidesBounds: slideCount === 1, */
+	loop: false,
+	autoplay: false,
 });
 
 /* tab */

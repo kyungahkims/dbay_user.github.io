@@ -707,8 +707,6 @@ header .btn_wrap {
 nav {
   width: 100%;
   background-color: #fff;
-  -webkit-box-shadow: inset 3px 12px 15px -10px rgba(0, 0, 0, 0.08);
-          box-shadow: inset 3px 12px 15px -10px rgba(0, 0, 0, 0.08);
 }
 nav ul {
   display: -webkit-box;

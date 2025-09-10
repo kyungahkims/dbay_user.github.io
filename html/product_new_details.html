@@ -43,31 +43,48 @@
 					</div>
 				</div>
 				<div class="color_tab_wrap">
-					<button type="button" aria-label="색상 선택 버튼" class="tab">
+					<div aria-label="색상 선택 버튼" class="tab">
 						<span class="color gray" aria-label="회색" role="img"></span>
-					</button>
-					<button type="button" aria-label="색상 선택 버튼" class="tab">
+					</div>
+					<div aria-label="색상 선택 버튼" class="tab">
 						<span class="color pink" aria-label="분홍색" role="img"></span>
-					</button>
-					<button type="button" aria-label="색상 선택 버튼" class="tab active">
+					</div>
+					<div aria-label="색상 선택 버튼" class="tab active">
 						<span class="color yellow" aria-label="노랑색" role="img"></span>
-					</button>
-					<button type="button" aria-label="색상 선택 버튼" class="tab">
+					</div>
+					<div aria-label="색상 선택 버튼" class="tab">
 						<span class="color black" aria-label="검정색" role="img"></span>
-					</button>
+					</div>
 				</div>
 				<div class="swiper_pagination"></div>
 			</div>
 
 			<ul class="product_wrap">
 				<li class="brand">Apple</li>
-				<li class="product">아이폰 16 프로 128GB 아이폰 16 프로 아이
-					폰 16 프로 128GB 아이폰 16 프로</li>
+				<li class="product">아이폰 16 프로 128GB 아이폰 16 프로 아이폰 16 프로 128GB 아이폰 16 프로</li>
 				<li class="model">모델명<span>sasdvasdfsdf</span></li>
-				<li class="price">출고가<span>1,200,000원</span></li>
+				<li class="price">출고가<span>1,200,000</span>원</li>
 				<li class="star">4.7<button type="button">(100) ></button></li>
-				<li class="max_price">최대 지원금 <strong>1,000,000</strong>원</li>
-				<li class="mix_price">카드결합시<span>월 <strong>-900,000</strong> 원 할인</span></li>
+				<li class="max_price">최대 지원금 <strong>1,000,000</strong>원
+					<div class="question_wrap">
+						<button type="button" aria-label="상세 설명 보기" class="question_btn"></button>
+						<div class="question">
+							<button type="button" aria-label="상세 설명 닫기" class="close_btn"></button>
+							<ul>
+								<li>최근 8주 동안 해당 상품의 가장 높은 지원금입니다.</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li class="mix_price">
+					<div class="left">
+						<div class="title">카드할인 적용시</div><span class="sub_title">(월 납부 요금)</span>
+					</div>
+					<div class="right">
+						<div class="before_price">월 <strong>150,000</strong> 원</div><span
+							class="dc_price"><strong>900,000</strong>원</span>
+					</div>
+				</li>
 			</ul>
 
 			<hr>
@@ -82,8 +99,7 @@
 				<div class="sub_tab_wrap">
 					<button type="button" class="tab">1주일</button>
 					<button type="button" class="tab">2주일</button>
-					<button type="button" class="tab">4주일</button>
-					<button type="button" class="tab active">8주일</button>
+					<button type="button" class="tab active">4주일</button>
 				</div>
 				<p>※ 최근 8주 동안의 지원금 시세를 제공합니다.(최대 지원금 기준)</p>
 				<div class="graph_box">그래프 영역</div>

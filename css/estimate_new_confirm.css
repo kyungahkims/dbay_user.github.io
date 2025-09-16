@@ -530,6 +530,28 @@ header h2 {
   color: #888;
   margin-bottom: 4px;
 }
+.bidding_box_wrap .box_wrap .product_details > li div.dis_card {
+  display: inline-block;
+}
+.bidding_box_wrap .box_wrap .product_details > li div.dis_card p {
+  position: relative;
+  color: #3b6df5;
+  margin-bottom: 1px;
+}
+.bidding_box_wrap .box_wrap .product_details > li div.dis_card p::before {
+  content: "";
+  width: 10px;
+  height: 8px;
+  position: absolute;
+  top: 4px;
+  left: -15px;
+  background: url("../img/icon-card.svg") no-repeat center;
+  margin-right: 5px;
+}
+.bidding_box_wrap .box_wrap .product_details > li div.dis_card span {
+  color: #3b6df5;
+  border-bottom: 1px solid #3b6df5;
+}
 .bidding_box_wrap .box_wrap .product_details > li p {
   font-size: 12px;
   font-weight: bold;

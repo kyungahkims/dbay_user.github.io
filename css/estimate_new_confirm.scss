@@ -548,6 +548,32 @@ header h2 {
 					font-weight: normal;
 					color: #888;
 					margin-bottom: 4px;
+
+					&.dis_card {
+						display: inline-block;
+
+						p {
+							position: relative;
+							color: #3b6df5;
+							margin-bottom: 1px;
+
+							&::before {
+								content: "";
+								width: 10px;
+								height: 8px;
+								position: absolute;
+								top: 4px;
+								left: -15px;
+								background: url('../img/icon-card.svg') no-repeat center;
+								margin-right: 5px;
+							}
+						}
+
+						span {
+							color: #3b6df5;
+							border-bottom: 1px solid #3b6df5;
+						}
+					}
 				}
 
 				p {

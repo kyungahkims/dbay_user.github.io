@@ -532,41 +532,6 @@ header {
 				align-items: end;
 			}
 
-			.color_group {
-				display: flex;
-				column-gap: 4px;
-				align-items: center;
-				margin: 4px 0 8px;
-
-				.color {
-					width: 12px;
-					height: 12px;
-					border-radius: 50%;
-					background-color: #d9f3ff;
-
-
-					&.gray {
-						background-color: #f1f1f1;
-					}
-
-					&.sky {
-						background-color: #d9f3ff;
-					}
-
-					&.pink {
-						background-color: #ffe2e2;
-					}
-
-					&.yellow {
-						background-color: #feffde;
-					}
-
-					&.black {
-						background-color: #535353;
-					}
-				}
-			}
-
 			.model_number {
 				font-size: 12px;
 				font-weight: 300;
@@ -609,6 +574,41 @@ header {
 
 		p {
 			color: #555;
+		}
+	}
+}
+
+.color_group {
+	display: flex;
+	column-gap: 4px;
+	align-items: center;
+	margin: 4px 0 8px;
+
+	.color {
+		width: 12px;
+		height: 12px;
+		border-radius: 50%;
+		background-color: #d9f3ff;
+
+
+		&.gray {
+			background-color: #f1f1f1;
+		}
+
+		&.sky {
+			background-color: #d9f3ff;
+		}
+
+		&.pink {
+			background-color: #ffe2e2;
+		}
+
+		&.yellow {
+			background-color: #feffde;
+		}
+
+		&.black {
+			background-color: #535353;
 		}
 	}
 }

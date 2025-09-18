@@ -134,6 +134,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-height: 97px;
   margin-bottom: 23px;
 }
 .estimate_box1 .box_body .product_wrap .product_img {
@@ -210,13 +211,19 @@
 }
 
 /* estimate_box2 */
+.estimate_box2.p_tb {
+  padding: 18px 18px 20px;
+}
+.estimate_box2.p_t {
+  padding: 0 18px 16px;
+}
 .estimate_box2 .box_header {
   background-color: #222;
 }
 .estimate_box2 .box_body {
   padding: 0 16px 16px;
 }
-.estimate_box2 .box_body .box_form li {
+.estimate_box2 .box_form li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -225,12 +232,12 @@
           justify-content: space-between;
   font-size: 14px;
 }
-.estimate_box2 .box_body .box_form li .title {
+.estimate_box2 .box_form li .title {
   font-weight: normal;
   text-align: left;
   color: #555;
 }
-.estimate_box2 .box_body .box_form li .title.circle_group {
+.estimate_box2 .box_form li .title.circle_group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -243,7 +250,7 @@
   min-width: 104px;
   color: #000;
 }
-.estimate_box2 .box_body .box_form li .title.circle_group .circle {
+.estimate_box2 .box_form li .title.circle_group .circle {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -261,22 +268,22 @@
   background-color: #eee;
   margin: 0 4px;
 }
-.estimate_box2 .box_body .box_form li .title.circle_group .plus {
+.estimate_box2 .box_form li .title.circle_group .plus {
   font-size: 11px;
   font-weight: 500;
   color: #ccc;
 }
-.estimate_box2 .box_body .box_form li .title .mini {
+.estimate_box2 .box_form li .title .mini {
   font-size: 12px;
 }
-.estimate_box2 .box_body .box_form li > div {
+.estimate_box2 .box_form li > div {
   font-weight: 500;
   text-align: right;
 }
-.estimate_box2 .box_body .box_form .box_sub_form {
+.estimate_box2 .box_form .box_sub_form {
   width: 100%;
 }
-.estimate_box2 .box_body .box_form .box_sub_form li {
+.estimate_box2 .box_form .box_sub_form li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -288,10 +295,10 @@
           align-items: center;
   font-size: 14px;
 }
-.estimate_box2 .box_body .box_form .box_sub_form li:not(:last-child) {
+.estimate_box2 .box_form .box_sub_form li:not(:last-child) {
   margin-bottom: 10px;
 }
-.estimate_box2 .box_body .box_form .box_sub_form li .title {
+.estimate_box2 .box_form .box_sub_form li .title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -300,14 +307,14 @@
           align-items: center;
   white-space: pre;
 }
-.estimate_box2 .box_body .box_form .box_sub_form li .title::before {
+.estimate_box2 .box_form .box_sub_form li .title::before {
   content: "";
   width: 2px;
   height: 2px;
   border-radius: 50%;
   margin-right: 5px;
 }
-.estimate_box2 .box_body .box_form .box_sub_form li > div {
+.estimate_box2 .box_form .box_sub_form li > div {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -315,16 +322,16 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.estimate_box2 .box_body .box_form .box_sub_form li > div.price {
+.estimate_box2 .box_form .box_sub_form li > div.price {
   position: relative;
 }
-.estimate_box2 .box_body .box_form .box_sub_form li > div.price input {
+.estimate_box2 .box_form .box_sub_form li > div.price input {
   padding-right: 22px;
 }
-.estimate_box2 .box_body .box_form .box_sub_form li > div.price span {
+.estimate_box2 .box_form .box_sub_form li > div.price span {
   margin: 0 8px 0 5px;
 }
-.estimate_box2 .box_body .box_form .box_sub_form li > div input {
+.estimate_box2 .box_form .box_sub_form li > div input {
   width: 100%;
   font-size: 14px;
   font-weight: 500;
@@ -333,72 +340,72 @@
   background-color: #f3f3f3;
   padding: 5px;
 }
-.estimate_box2 .box_body .box_form .box_sub_form li > div input::-webkit-input-placeholder {
+.estimate_box2 .box_form .box_sub_form li > div input::-webkit-input-placeholder {
   font-size: 11px;
   font-weight: normal;
   color: #a8a8a8;
 }
-.estimate_box2 .box_body .box_form .box_sub_form li > div input::-moz-placeholder {
+.estimate_box2 .box_form .box_sub_form li > div input::-moz-placeholder {
   font-size: 11px;
   font-weight: normal;
   color: #a8a8a8;
 }
-.estimate_box2 .box_body .box_form .box_sub_form li > div input:-ms-input-placeholder {
+.estimate_box2 .box_form .box_sub_form li > div input:-ms-input-placeholder {
   font-size: 11px;
   font-weight: normal;
   color: #a8a8a8;
 }
-.estimate_box2 .box_body .box_form .box_sub_form li > div input::-ms-input-placeholder {
+.estimate_box2 .box_form .box_sub_form li > div input::-ms-input-placeholder {
   font-size: 11px;
   font-weight: normal;
   color: #a8a8a8;
 }
-.estimate_box2 .box_body .box_form .box_sub_form li > div input::placeholder {
+.estimate_box2 .box_form .box_sub_form li > div input::placeholder {
   font-size: 11px;
   font-weight: normal;
   color: #a8a8a8;
 }
-.estimate_box2 .box_body .box_form1 {
+.estimate_box2 .box_form1 {
   padding: 22px 0 11px;
   border-bottom: 1px solid #f3f3f3;
 }
-.estimate_box2 .box_body .box_form1 .big {
+.estimate_box2 .box_form1 .big {
   font-size: 16px;
   font-weight: 500;
   margin-bottom: 14px;
 }
-.estimate_box2 .box_body .box_form1 .big .title {
+.estimate_box2 .box_form1 .big .title {
   color: #000;
 }
-.estimate_box2 .box_body .box_form1 .big div {
+.estimate_box2 .box_form1 .big div {
   color: #f53b3b;
 }
-.estimate_box2 .box_body .box_form1 .box_sub_form li:not(:last-child) {
+.estimate_box2 .box_form1 .box_sub_form li:not(:last-child) {
   margin-bottom: 20px;
 }
-.estimate_box2 .box_body .box_form1 .box_sub_form .title {
+.estimate_box2 .box_form1 .box_sub_form .title {
   color: #f53b3b;
 }
-.estimate_box2 .box_body .box_form1 .box_sub_form .title::before {
+.estimate_box2 .box_form1 .box_sub_form .title::before {
   background-color: #f53b3b;
 }
-.estimate_box2 .box_body .box_form2 {
+.estimate_box2 .box_form2 {
   padding: 13px 0 12px;
   border-bottom: 1px solid #f3f3f3;
 }
-.estimate_box2 .box_body .box_form2 li:not(:last-child) {
+.estimate_box2 .box_form2 li:not(:last-child) {
   margin-bottom: 12px;
 }
-.estimate_box2 .box_body .box_form3 {
+.estimate_box2 .box_form3 {
   padding: 13px 0 21px;
 }
-.estimate_box2 .box_body .box_form3 li:not(:last-child) {
+.estimate_box2 .box_form3 li:not(:last-child) {
   margin-bottom: 10px;
 }
-.estimate_box2 .box_body .box_form3 .box_sub_form .title::before {
+.estimate_box2 .box_form3 .box_sub_form .title::before {
   background-color: #555;
 }
-.estimate_box2 .box_body .box_form4 li.check {
+.estimate_box2 .box_form4 li.check {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -409,9 +416,9 @@
       -ms-flex-align: center;
           align-items: center;
   font-size: 14px;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
-.estimate_box2 .box_body .box_form4 li.check input[type=checkbox] {
+.estimate_box2 .box_form4 li.check input[type=checkbox] {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -425,18 +432,18 @@
   cursor: pointer;
   margin-right: 9px;
 }
-.estimate_box2 .box_body .box_form4 li.check input[type=checkbox]:checked {
+.estimate_box2 .box_form4 li.check input[type=checkbox]:checked {
   background: url("../img/icon-check-on.svg") left center no-repeat;
 }
-.estimate_box2 .box_body .box_form4 li.check input[type=checkbox]:disabled {
+.estimate_box2 .box_form4 li.check input[type=checkbox]:disabled {
   background: url("../img/icon-check-disabled.svg") left center no-repeat;
   cursor: default;
 }
-.estimate_box2 .box_body .box_form4 li.card_plus {
+.estimate_box2 .box_form4 li.card_plus {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
-.estimate_box2 .box_body .box_form4 li.card_plus h5 {
+.estimate_box2 .box_form4 li.card_plus h5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -445,43 +452,48 @@
           justify-content: space-between;
   font-size: 14px;
   font-weight: normal;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
-.estimate_box2 .box_body .box_form4 li.card_plus h5 .remove_btn {
+.estimate_box2 .box_form4 li.card_plus h5 .remove_btn {
   font-size: 10px;
   color: #fff;
   border-radius: 4px;
   background-color: #5d5d5d;
   padding: 4px 12px;
 }
-.estimate_box2 .box_body .box_form4 li.card_plus .box_sub_form li .price input {
+.estimate_box2 .box_form4 li.card_plus .box_sub_form li .price input {
   padding-right: 15px;
 }
-.estimate_box2 .box_body .box_form4 li.card_plus .box_sub_form li .price span {
+.estimate_box2 .box_form4 li.card_plus .box_sub_form li .price span {
   right: 0;
 }
-.estimate_box2 .box_body .box_form4 .box_sub_form li:not(:last-child) {
-  margin-bottom: 10px;
+.estimate_box2 .box_form4 .box_sub_form li:not(:last-child) {
+  margin-bottom: 17px;
 }
-.estimate_box2 .box_body .box_form4 .box_sub_form .title::before {
+.estimate_box2 .box_form4 .box_sub_form .title::before {
   background-color: #555;
 }
-.estimate_box2 .box_body .box_form5 {
+.estimate_box2 .box_form5 {
   padding-top: 18px;
   border-top: 1px solid #f3f3f3;
 }
-.estimate_box2 .box_body .box_form5 li {
+.estimate_box2 .box_form5 li {
   font-size: 16px;
   font-weight: 500;
 }
-.estimate_box2 .box_body .box_form5 li:not(:first-child) {
+.estimate_box2 .box_form5 li:not(:first-child) {
   margin-top: 13px;
 }
-.estimate_box2 .box_body .box_form5 li.check_state .circle_group {
+.estimate_box2 .box_form5 li.check_state {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.estimate_box2 .box_form5 li.check_state .circle_group {
   display: block;
   text-align: left;
 }
-.estimate_box2 .box_body .box_form5 li.check_state .circle_group .group {
+.estimate_box2 .box_form5 li.check_state .circle_group .group {
   position: relative;
   left: -4px;
   display: -webkit-box;
@@ -489,14 +501,44 @@
   display: flex;
   margin-top: 4px;
 }
-.estimate_box2 .box_body .box_form5 li .title.circle_group .circle {
+.estimate_box2 .box_form5 li .title.circle_group .circle {
   width: 18px;
   height: 18px;
 }
-.estimate_box2 .box_body .box_form5 li div {
+.estimate_box2 .box_form5 li div {
   color: #f53b3b;
 }
-.estimate_box2 .box_body .plus_btn {
+.estimate_box2 .box_form6 {
+  padding: 25px 0 8px;
+}
+.estimate_box2 .box_form6 li {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.estimate_box2 .box_form6 li:not(:last-child) {
+  margin-bottom: 19px;
+}
+.estimate_box2 .box_form6 li .title {
+  font-size: 14px;
+}
+.estimate_box2 .box_form6 li .title.circle_group {
+  min-width: auto;
+  color: #555;
+}
+.estimate_box2 .box_form6 li .title.circle_group .circle {
+  color: #202020;
+}
+.estimate_box2 .box_form6 li .title.dotted::before {
+  content: ".";
+  position: relative;
+  top: -4px;
+  margin: 0 3px;
+}
+.estimate_box2 .box_form6 li .title.red {
+  color: #f53b3b;
+}
+.estimate_box2 .plus_btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -515,9 +557,8 @@
   margin-bottom: 20px;
   border-bottom: 1px solid #f3f3f3;
 }
-.estimate_box2 .box_body .cont {
+.estimate_box2 .cont {
   font-size: 12px;
-  text-align: center;
   letter-spacing: -0.24px;
   color: #999;
   margin-top: 17px;
@@ -531,6 +572,9 @@
   font-size: 14px;
   font-weight: 500;
   margin-bottom: 8px;
+}
+.estimate_box3 h5.mt {
+  margin-top: 10px;
 }
 .estimate_box3 input {
   width: 100%;

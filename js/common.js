@@ -267,6 +267,12 @@ $('.modal2 #checkbox').on('change', function () {
 	}
 });
 
+/* header pc */
+$('header .pc_wrap li').click(function () {
+	$('header .pc_wrap li').removeClass('active');
+	$(this).addClass('active');
+});
+
 /* 날짜 선택 라이브러리 */
 $('#dateInput, #dateInput2').daterangepicker({
 	singleDatePicker: true,

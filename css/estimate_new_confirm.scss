@@ -621,6 +621,48 @@ header h2 {
 			background-color: #f3f3f3;
 			margin-top: 24px;
 		}
+
+		.btn_wrap {
+			display: flex;
+			column-gap: 10px;
+			margin-top: 11px;
+
+			button {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+				height: 32px;
+				font-size: 12px;
+				font-weight: 500;
+				color: #fff;
+				border-radius: 20px;
+
+				&.call_btn {
+					background-color: #f53b3b;
+
+					&::before {
+						content: "";
+						width: 9px;
+						height: 18px;
+						background: url('../img/icon-phone-02.svg') no-repeat center;
+						margin-right: 3px;
+					}
+				}
+
+				&.chat_btn {
+					background-color: #333;
+
+					&::before {
+						content: "";
+						width: 13px;
+						height: 12px;
+						background: url('../img/icon-chat.svg') no-repeat center;
+						margin-right: 5px;
+					}
+				}
+			}
+		}
 	}
 }
 

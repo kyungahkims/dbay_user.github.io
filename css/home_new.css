@@ -171,6 +171,7 @@ header .notification_btn.active::after {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  cursor: pointer;
 }
 .main_group .category_group li::before {
   content: "";

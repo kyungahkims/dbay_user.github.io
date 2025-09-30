@@ -18,23 +18,53 @@
 <body>
 	<div class="wrap">
 		<header>
-			<div class="flex-c"><a href="#" aria-label="이전 페이지로 돌아가기">
-					<img src="../img/ico-back.svg" alt="이전 페이지로 돌아가기">
-				</a>
-				<h2>채팅방 제목은 여기에 채팅방 제목은 여기에</h2>
+			<div class="flex-c">
+				<a href="#" class="logo"><img src="../img/logo-dbay.png" alt="디베이, 전자제품 최저가 견적"></a>
+				<div class="mo">
+					<a href="#" aria-label="이전 페이지로 돌아가기">
+						<img src="../img/ico-back.svg" alt="이전 페이지로 돌아가기">
+					</a>
+					<h2>채팅방 제목은 여기에 채팅방 제목은 여기에</h2>
+				</div>
 			</div>
-			<button type="button" class="detail_btn">견적 상세보기</button>
+			<ul class="pc_wrap">
+				<li class="active"><a href="#">홈</a></li>
+				<li><a href="#">휴대폰</a></li>
+				<li><a href="#">인터넷</a></li>
+				<li><a href="#">정수기</a></li>
+				<li><a href="#">생활/가전</a></li>
+				<li><a href="#">진행견적</a></li>
+				<li><a href="#">완료견적</a></li>
+				<li><a href="#">MY</a></li>
+				<li>
+					<a href="#" class="inquiry_link">입점문의</a>
+					<a href="#" aria-label="채팅" class="chat_link"></a>
+					<a href="#" aria-label="알림" class="notification_btn active"></a>
+				</li>
+			</ul>
+			<div class="btn_wrap">
+				<button type="button" class="mo detail_btn">견적 상세보기</button>
+			</div>
 		</header><!-- header -->
 		<div class="wrapper">
+			<div class="pc">
+				<div>
+					<a href="#" aria-label="이전 페이지로 돌아가기">
+						<img src="../img/ico-back.svg" alt="이전 페이지로 돌아가기">
+					</a>
+					<h2 class="pc_title">채팅방 제목은 여기에 채팅방 제목은 여기에</h2>
+				</div>
+				<button type="button" class="detail_btn">견적 상세보기</button>
+			</div>
 		</div><!-- wrapper -->
-		<!-- <nav>
+		<nav>
 			<ul>
 				<li><a href="#" class="active" aria-current="page">홈</a></li>
 				<li><a href="#">진행견적<span class="comfirm">10</span></a></li>
 				<li><a href="#">완료견적<span class="comfirm">+99</span></a></li>
 				<li><a href="#">MY</a></li>
 			</ul>
-		</nav> --><!-- nav -->
+		</nav><!-- nav -->
 	</div><!-- wrap -->
 	<script src="../js/common.js"></script>
 </body>

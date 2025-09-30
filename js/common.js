@@ -251,7 +251,12 @@ $(document).on('click', '.review_select_wrap .star_wrap span', function () {
 
 /* 알림 상세 타이틀 높이 값 */
 function onResize() {
-	$(".notification_cont").css("padding-top", $(".notification_title").outerHeight() + 16 + "px");
+	if ($(window).width() < 960) {
+		$(".notification_cont").css("padding-top", $(".notification_title").outerHeight() + 16 + "px");
+	} else {
+	
+		$(".notification_cont").css("padding-top", "20px");
+	}
 }
 
 $(window).resize(onResize).trigger("resize");

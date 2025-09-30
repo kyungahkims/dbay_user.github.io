@@ -1,6 +1,7 @@
 /* bg */
 .bg {
   background-color: #fff;
+  padding-top: 10px;
 }
 .bg .bubble {
   max-width: 200px;

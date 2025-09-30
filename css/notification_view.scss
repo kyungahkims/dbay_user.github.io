@@ -1,25 +1,24 @@
-.wrapper {
-	padding: 20px 16px;
+.inner_wrapper {
 
-	&.wrapper2 {
+	&.inner_wrapper2 {
 		padding: 0;
 		background-color: #fff;
 	}
-}
 
-.btn_wrap {
-	display: flex;
-	column-gap: 8px;
+	.btn_wrap {
+		display: flex;
+		column-gap: 8px;
 
-	button {
-		font-size: 14px;
-		padding: 8px 12px;
-		border-radius: 8px;
-		background-color: #fff;
+		button {
+			font-size: 14px;
+			padding: 8px 12px;
+			border-radius: 8px;
+			background-color: #fff;
 
-		&.red {
-			color: #fff;
-			background-color: #f53b3b;
+			&.red {
+				color: #fff;
+				background-color: #f53b3b;
+			}
 		}
 	}
 }
@@ -126,7 +125,6 @@
 .notification_view {
 
 	.notification_title {
-		position: fixed;
 		width: 100%;
 		max-width: 600px;
 		font-size: 12px;
@@ -168,5 +166,14 @@
 		font-size: 14px;
 		line-height: 1.71;
 		padding: 16px 20px;
+	}
+}
+
+@media (max-width: 960px) {
+	.notification_view {
+		.notification_title {
+			position: fixed;
+			top: 62px;
+		}
 	}
 }

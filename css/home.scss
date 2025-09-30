@@ -1,5 +1,5 @@
-header {
-	background-color: #f3f3f3;
+.wrapper {
+	margin-top: 80px;
 }
 
 .wing {
@@ -641,5 +641,34 @@ header {
 		transform: translateY(0);
 		opacity: 1;
 		visibility: visible;
+	}
+}
+
+@media (max-width: 960px) {
+	header {
+		background-color: #f53b3b;
+
+		.inquiry_link {
+			color: #fff;
+			border: 1px solid #fff;
+		}
+
+		.chat_link {
+			background: url('../img/icon-main-chat.svg') no-repeat center;
+		}
+
+		.notification_btn {
+			background: url('../img/ico-alram.png') no-repeat center;
+
+			&.active {
+				&::after {
+					background-color: #fff700;
+				}
+			}
+		}
+
+		.logo {
+			display: flex;
+		}
 	}
 }

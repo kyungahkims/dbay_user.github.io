@@ -145,12 +145,45 @@ body {
 
 /* header */
 header {
-	width: 100%;
+	position: fixed;
+	left: 0;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
-	background-color: #fff;
-	padding: 40px 16px 16px;
+	width: 100%;
+	background-color: #f53b3b;
+	padding: 17px 16px;
+	z-index: 999;
+
+	.mo {
+		display: none;
+		align-items: center;
+	}
+
+	.pc_wrap {
+		display: flex;
+		align-items: center;
+		column-gap: 32px;
+		margin-left: 30px;
+
+		li {
+			display: flex;
+			font-size: 16px;
+			font-weight: 500;
+			color: #fff;
+			cursor: pointer;
+
+			&.active {
+				color: #f7ff00;
+			}
+
+			&:last-child {
+				display: flex;
+				align-items: center;
+				column-gap: 20px;
+			}
+		}
+	}
 
 	h2 {
 		font-size: 18px;
@@ -163,15 +196,25 @@ header {
 		font-weight: 500;
 		letter-spacing: -0.24px;
 		line-height: 1.33;
-		color: #ee3e3e;
+		color: #fff;
 		border-radius: 20px;
-		border: 1px solid #ee3e3e;
+		border: 1px solid #fff;
 		padding: 5px 10px;
-		margin-right: 19px;
+	}
+
+	.chat_link {
+		width: 24px;
+		height: 23px;
+		display: inline-block;
+		background: url('../img/icon-main-chat.svg') no-repeat center;
 	}
 
 	.notification_btn {
 		position: relative;
+		width: 24px;
+		height: 24px;
+		display: inline-block;
+		background: url('../img/ico-alram.png') no-repeat center;
 
 		&.active {
 			&::after {
@@ -182,7 +225,7 @@ header {
 				width: 10px;
 				height: 10px;
 				border-radius: 50%;
-				background-color: #f53b3b;
+				background-color: #fff700;
 			}
 		}
 	}
@@ -192,7 +235,7 @@ header {
 	}
 
 	.btn_wrap {
-		display: flex;
+		display: none;
 		align-items: center;
 		column-gap: 14px;
 	}
@@ -202,6 +245,31 @@ header {
 .wrapper {
 	flex: 1;
 	overflow-y: auto;
+	margin-top: 60px;
+
+	.pc {
+		display: flex;
+		align-items: center;
+		border-bottom: 2px solid #f4f4f4;
+		background-color: #fff;
+		padding: 17px 0;
+
+		&>div {
+			display: flex;
+			align-items: center;
+			flex: 1;
+		}
+	}
+
+	.pc_title {
+		font-size: 18px;
+		font-weight: 500;
+		margin-left: 16px;
+	}
+}
+
+.inner_wrapper {
+	padding: 20px 16px;
 }
 
 /* bg */
@@ -615,6 +683,7 @@ header {
 
 /* nav */
 nav {
+	display: none;
 	width: 100%;
 	background-color: #fff;
 
@@ -1239,5 +1308,60 @@ nav {
 				cursor: pointer;
 			}
 		}
+	}
+}
+
+@media (max-width: 960px) {
+	header {
+		max-width: 600px;
+		justify-content: space-between;
+		left: auto;
+		margin: auto;
+		background-color: #fff;
+
+		.logo {
+			display: none;
+		}
+
+		.mo {
+			display: flex;
+		}
+
+		.pc_wrap {
+			display: none;
+		}
+
+		.btn_wrap {
+			display: flex;
+		}
+
+		.inquiry_link {
+			color: #ee3e3e;
+			border: 1px solid #ee3e3e;
+		}
+
+		.chat_link {
+			background: url('../img/icon_main_black_chat.svg') no-repeat center;
+		}
+
+		.notification_btn {
+			background: url('../img/ico_alram.png') no-repeat center;
+
+			&.active {
+				&::after {
+					background-color: #f53b3b;
+				}
+			}
+		}
+	}
+
+	.wrapper {
+		.pc {
+			display: none;
+		}
+	}
+
+	nav {
+		display: block;
 	}
 }

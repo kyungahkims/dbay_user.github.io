@@ -3,6 +3,9 @@
 }
 
 /* bg */
+.bg {
+  padding-top: 10px;
+}
 .bg .bubble {
   border: 1px solid #eee;
   background-color: #f7f7f7;

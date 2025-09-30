@@ -1,6 +1,6 @@
 @charset "UTF-8";
-header {
-  background-color: #f3f3f3;
+.wrapper {
+  margin-top: 80px;
 }
 
 .wing {
@@ -663,4 +663,28 @@ header {
           transform: translateY(0);
   opacity: 1;
   visibility: visible;
+}
+
+@media (max-width: 960px) {
+  header {
+    background-color: #f53b3b;
+  }
+  header .inquiry_link {
+    color: #fff;
+    border: 1px solid #fff;
+  }
+  header .chat_link {
+    background: url("../img/icon-main-chat.svg") no-repeat center;
+  }
+  header .notification_btn {
+    background: url("../img/ico-alram.png") no-repeat center;
+  }
+  header .notification_btn.active::after {
+    background-color: #fff700;
+  }
+  header .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }/*# sourceMappingURL=home.css.map */

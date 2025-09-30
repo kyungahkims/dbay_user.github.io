@@ -1,53 +1,38 @@
 .wrapper {
   background-color: #fff;
   padding-bottom: 40px;
-  margin-top: 60px;
+  /* margin-top: 60px; */
 }
 
 header {
-  position: fixed;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
+  /* 	position: fixed;
   left: 0;
+  justify-content: center;
   padding: 17px 16px;
   z-index: 999;
-  background-color: #f53b3b;
-}
-header ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-column-gap: 30px;
-     -moz-column-gap: 30px;
-          column-gap: 30px;
-  margin-left: 62px;
-}
-header ul li {
-  font-size: 16px;
-  font-weight: 500;
-  color: #fff;
-  cursor: pointer;
-}
-header ul li.active {
-  color: #f7ff00;
-}
-header .btn_wrap {
-  display: none;
-}
-header .inquiry_link {
-  color: #fff;
-  border: 1px solid #fff;
-  margin-right: 0;
-}
-header .notification_btn.active::after {
-  background-color: #fff700;
+  background-color: #f53b3b; */
+  /* 	.btn_wrap {
+  	display: none;
+  } */
+  /* .inquiry_link {
+  	color: #fff;
+  	border: 1px solid #fff;
+  	margin-right: 0;
+  } */
+  /* 	.chat_link {
+  	width: 24px;
+  	height: 23px;
+  	display: inline-block;
+  	background: url('../img/icon-main-chat.svg') no-repeat center;
+  } */
+  /* 	.notification_btn.active::after {
+  	background-color: #fff700;
+  } */
 }
 
+/* nav {
+	display: none;
+} */
 .main_group {
   border-radius: 0 0 20px 20px;
   background-color: #f53b3b;
@@ -339,19 +324,24 @@ header .notification_btn.active::after {
   font-size: 14px;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 960px) {
   header {
-    max-width: 600px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    left: auto;
-    margin: auto;
+    background-color: #f53b3b;
   }
-  header ul {
-    display: none;
+  header .inquiry_link {
+    color: #fff;
+    border: 1px solid #fff;
   }
-  header .btn_wrap {
+  header .chat_link {
+    background: url("../img/icon-main-chat.svg") no-repeat center;
+  }
+  header .notification_btn {
+    background: url("../img/ico-alram.png") no-repeat center;
+  }
+  header .notification_btn.active::after {
+    background-color: #fff700;
+  }
+  header .logo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

@@ -9,7 +9,17 @@ header div h2 {
   white-space: nowrap;
   overflow: hidden;
 }
-header .detail_btn {
+
+.detail_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   width: 92px;
@@ -28,7 +38,6 @@ header .detail_btn {
   background-color: #fff;
 }
 .wrapper .tab_wrap {
-  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,9 +63,6 @@ header .detail_btn {
   font-weight: bold;
   color: #f53b3b;
   border-bottom: 2px solid #f53b3b;
-}
-.wrapper .chat_list_wrap {
-  padding-top: 63px;
 }
 .wrapper .chat_list_wrap li {
   display: -webkit-box;
@@ -127,4 +133,24 @@ header .detail_btn {
 .wrapper .chat_list_wrap li .right span {
   font-size: 12px;
   color: #999;
+}
+
+@media (max-width: 960px) {
+  header .logo {
+    display: none;
+  }
+  header .mo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .pc {
+    display: none;
+  }
+  .wrapper .tab_wrap {
+    position: fixed;
+  }
+  .wrapper .chat_list_wrap {
+    padding-top: 63px;
+  }
 }/*# sourceMappingURL=chatting.css.map */

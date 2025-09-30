@@ -1,50 +1,44 @@
 .wrapper {
 	background-color: #fff;
 	padding-bottom: 40px;
-	margin-top: 60px;
+	/* margin-top: 60px; */
 }
 
 header {
-	position: fixed;
-	justify-content: center;
-	width: 100%;
+	/* 	position: fixed;
 	left: 0;
+	justify-content: center;
 	padding: 17px 16px;
 	z-index: 999;
-	background-color: #f53b3b;
+	background-color: #f53b3b; */
 
-	ul {
-		display: flex;
-		align-items: center;
-		column-gap: 30px;
-		margin-left: 62px;
 
-		li {
-			font-size: 16px;
-			font-weight: 500;
-			color: #fff;
-			cursor: pointer;
 
-			&.active {
-				color: #f7ff00;
-			}
-		}
-	}
-
-	.btn_wrap {
+	/* 	.btn_wrap {
 		display: none;
-	}
+	} */
 
-	.inquiry_link {
+	/* .inquiry_link {
 		color: #fff;
 		border: 1px solid #fff;
 		margin-right: 0;
-	}
+	} */
 
-	.notification_btn.active::after {
+	/* 	.chat_link {
+		width: 24px;
+		height: 23px;
+		display: inline-block;
+		background: url('../img/icon-main-chat.svg') no-repeat center;
+	} */
+
+	/* 	.notification_btn.active::after {
 		background-color: #fff700;
-	}
+	} */
 }
+
+/* nav {
+	display: none;
+} */
 
 .main_group {
 	border-radius: 0 0 20px 20px;
@@ -320,18 +314,30 @@ header {
 	}
 }
 
-@media (max-width: 760px) {
+@media (max-width: 960px) {
 	header {
-		max-width: 600px;
-		justify-content: space-between;
-		left: auto;
-		margin: auto;
+		background-color: #f53b3b;
 
-		ul {
-			display: none;
+		.inquiry_link {
+			color: #fff;
+			border: 1px solid #fff;
 		}
 
-		.btn_wrap {
+		.chat_link {
+			background: url('../img/icon-main-chat.svg') no-repeat center;
+		}
+
+		.notification_btn {
+			background: url('../img/ico-alram.png') no-repeat center;
+
+			&.active {
+				&::after {
+					background-color: #fff700;
+				}
+			}
+		}
+
+		.logo {
 			display: flex;
 		}
 	}

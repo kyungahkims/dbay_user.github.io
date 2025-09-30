@@ -10,6 +10,9 @@ header {
   padding-right: 17px;
 }
 
+.before {
+  margin-top: 10px;
+}
 .before a {
   padding: 16px 0;
 }
